@@ -24,6 +24,7 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Instructions](#instructions)
+* [Decisions](#decisions)
 * [Contact](#contact)
 
 
@@ -53,6 +54,17 @@ Il plugin si sofferma su pochi ed incisivi passi, tra cui:
 3. Identificazione delle possibili "keywords" potenzialmente rappresentanti dei SATD
 4. Segnalazione del Commit ID e del commit message identificato al passo precedente
 
+<!-- Decisions -->
+## Decisions
+
+* 22/10/2020 
+
+Durante le fasi primordiali di sviluppo si è deciso di strutturare l'intero plugin con due moduli ben distinti.
+
+Un primo modulo presenta il core esecutivo del plugin, ovvero tutto il codice riguardante l'identificazione dei SATB.
+Il secondo modulo presenta la parte di interazione tra il core del plugin con l'IDE stesso, quindi va a gestire tutti gli input e output.
+
+Questa scelta è stata presa per rendere il core del plugin ben separato dall'IDE in cui è stato sviluppato il plugin, così da renderlo utile e soprattutto riutilizzabile con altri IDE al di fuori di IntelliJ, mantenendo la parte di logica del software separata dalla parte di input/output.
 
 
 
