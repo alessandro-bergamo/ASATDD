@@ -59,7 +59,7 @@ Il plugin si sofferma su pochi ed incisivi passi, tra cui:
 
 * 22/10/2020 
 
-Durante le fasi primordiali di sviluppo si è deciso di strutturare l'intero plugin con due moduli ben distinti.
+Durante le fasi primordiali di sviluppo si è deciso di strutturare l'intero plugin con due moduli ben distinti sulla base del modello [Onion Architecture](https://www.codeguru.com/csharp/csharp/cs_misc/designtechniques/understanding-onion-architecture.html#:~:text=Onion%20Architecture%20is%20based%20on,on%20the%20actual%20domain%20models.)
 
 Un primo modulo presenta il core esecutivo del plugin, ovvero tutto il codice riguardante l'identificazione dei SATB.
 Il secondo modulo presenta la parte di interazione tra il core del plugin con l'IDE stesso, quindi va a gestire tutti gli input e output.
