@@ -6,13 +6,13 @@
   <p align="center">
     Identify SATD è un plugin per IntelliJ utile all'identificazione dei "Self Admitted Technical Debt"
     <br />
-    <a href="https://github.com/alessandro-bergamo/Indentify-SATD"><strong>Esplora il codice »</strong></a>
+    <a href="https://github.com/alessandro-bergamo/Identify-SATD"><strong>Esplora il codice »</strong></a>
     <br />
     <br />
     ·
-    <a href="https://github.com/alessandro-bergamo/Indentify-SATD/issues">Segnala Bug</a>
+    <a href="https://github.com/alessandro-bergamo/Identify-SATD/issues">Segnala Bug</a>
     ·
-    <a href="https://github.com/alessandro-bergamo/Indentify-SATD/issues">Richiedi Feature</a>
+    <a href="https://github.com/alessandro-bergamo/Identify-SATD/issues">Richiedi Feature</a>
   </p>
 </p>
 
@@ -32,7 +32,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<h3>Indentify SATD</h3>
+<h3>Identify SATD</h3>
 
 Un "Self Admitted Technical Debt" è un modo per segnalare di aver pubblicato del codice incompleto, che richiede un rifacimento, che produce errori o che è giusto per far funzionare l'intero sistema.
 Questo plugin mira ad identificarli attraverso l'analisi testuale del "Commit Message", disponibile dopo la pubblicazione del codice al "master" branch.
@@ -74,7 +74,7 @@ Questa scelta è stata presa per rendere il core del plugin ben separato dall'ID
 
 Your Name - [@linkedin](https://www.linkedin.com/in/alessandro-bergamo-4a21b11ba/) - a.bergamo2@studenti.unisa.it
 
-Project Link: [https://github.com/alessandro-bergamo/Indentify-SATD](https://github.com/alessandro-bergamo/Indentify-SATD)
+Project Link: [https://github.com/alessandro-bergamo/Identify-SATD](https://github.com/alessandro-bergamo/Identify-SATD)
 
 
 
