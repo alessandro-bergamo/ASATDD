@@ -1,18 +1,34 @@
 package core.usecases.identifySATD;
 
-import core.entities.Component;
-import core.entities.detector.BaseIdentificationDetector;
+import core.entities.Commit;
+import core.entities.detector.SATDDetector;
+import core.util.RetrieveCommitsLog;
+import org.eclipse.jgit.api.errors.GitAPIException;
 
-import java.util.Collection;
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class IdentifySATDInteractor
 {
 
-    public Collection<Component> execute()
+    public IdentifySATDInteractor(RetrieveCommitsLog retrieveCommitsLog, SATDDetector SATDDetector)
     {
-        BaseIdentificationDetector baseIdentificationDetector = new BaseIdentificationDetector();
-
-        return baseIdentificationDetector.detectSATD();
+        this.retrieveCommitsLog = retrieveCommitsLog;
+        this.SATDDetector = SATDDetector;
     }
+
+
+    //Gestire le eccezioni
+    public boolean execute() throws IOException, GitAPIException
+    {
+        ArrayList<Commit> commits = retrieveCommitsLog.retrieveCommitsLogs();
+
+        return SATDDetector.detectSATD(commits);
+    }
+
+
+
+    private RetrieveCommitsLog retrieveCommitsLog;
+    private SATDDetector SATDDetector;
 
 }

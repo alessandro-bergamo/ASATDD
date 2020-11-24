@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IdeaProjects-Identify-SATD.iml" filepath="$PROJECT_DIR$/.idea/modules/IdeaProjects-Identify-SATD.iml" group="Identify-SATD" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Identify-SATD.iml" filepath="$PROJECT_DIR$/.idea/modules/Identify-SATD.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Identify-SATD/Identify-SATD-Identify-SATD.iml" filepath="$PROJECT_DIR$/.idea/modules/Identify-SATD/Identify-SATD-Identify-SATD.iml" group="Identify-SATD/Identify-SATD" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Identify-SATD/Identify-SATD-Identify-SATD_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Identify-SATD/Identify-SATD-Identify-SATD_main.iml" group="Identify-SATD/Identify-SATD" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Identify-SATD/Identify-SATD-Identify-SATD_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Identify-SATD/Identify-SATD-Identify-SATD_test.iml" group="Identify-SATD/Identify-SATD" />
     </modules>

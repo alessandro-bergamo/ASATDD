@@ -1,10 +1,12 @@
 package core.entities.detector;
 
-import core.entities.Component;
+import core.entities.Commit;
 
 import java.util.List;
 
 public interface SATDDetector
 {
-    List<Component> detectSATD();
+
+    boolean detectSATD(List<Commit> commits);
+
 }
