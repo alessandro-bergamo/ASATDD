@@ -1,0 +1,21 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="202.7319" until-build="202.*"/>
+  <id>org.alessandrobergamo.Identify-SATD</id>
+  <name>Identify-SATD</name>
+  <vendor email="a.bergamo2@studenti.unisa.it" url="https://www.linkedin.com/in/alessandro-bergamo-4a21b11ba/">Alessandro Bergamo</vendor>
+  <description>
+        Identify SATD is a plugin for IntelliJ used for the identification of "Self Admitted Technical Debt"
+    </description>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij"/>
+  <actions>
+    <group id="application.actions.GroupedActions" text="IdentifySATD" popup="true">
+      <add-to-group group-id="MainMenu" anchor="last"/>
+      <action id="application.actions.FindSATDAction" class="application.actions.FindSATDAction" text="FindSATDAction"/>
+    </group>
+  </actions>
+</idea-plugin>

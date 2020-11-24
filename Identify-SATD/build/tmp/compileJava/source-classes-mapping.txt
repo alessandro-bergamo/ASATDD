@@ -1,0 +1,14 @@
+core/util/RetrieveCommitsLog.java
+ core.util.RetrieveCommitsLog
+core/entities/detector/IdentificationDetector.java
+ core.entities.detector.IdentificationDetector
+core/entities/detector/SATDDetector.java
+ core.entities.detector.SATDDetector
+core/entities/Commit.java
+ core.entities.Commit
+core/entities/detector/ImpossibleIdentification.java
+ core.entities.detector.ImpossibleIdentification
+application/actions/FindSATDAction.java
+ application.actions.FindSATDAction
+core/usecases/identifySATD/IdentifySATDInteractor.java
+ core.usecases.identifySATD.IdentifySATDInteractor
