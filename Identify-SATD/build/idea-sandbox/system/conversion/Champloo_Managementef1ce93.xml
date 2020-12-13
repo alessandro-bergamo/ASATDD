@@ -1,0 +1,25 @@
+<conversion>
+  <applied-converters>
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="android-sdk-library" />
+    <converter id="android-module-to-java-module" />
+    <converter id="android-proguard-options" />
+  </applied-converters>
+  <project-files>
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\libraries\Java_EE_6_Java_EE_6.xml" timestamp="1602105206354" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\workspace.xml" timestamp="1606877933210" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\libraries\mail_6_0_0.xml" timestamp="1602105654228" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\modules.xml" timestamp="1602104604290" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\vcs.xml" timestamp="1602104604290" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\libraries\javax_mail.xml" timestamp="1602105806861" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\dataSources.local.xml" timestamp="1602104604287" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\misc.xml" timestamp="1602104629152" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\encodings.xml" timestamp="1602104604288" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\artifacts\ChamplooWebsite_war_exploded.xml" timestamp="1602104604284" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\Champloo_Management.iml" timestamp="1602105806842" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\checkstyle-idea.xml" timestamp="1602104604285" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\ChamplooWebsite\ChamplooWebsite.iml" timestamp="1602105811045" />
+    <file path="C:\Users\Alessandro\IdeaProjects\Champloo_Management\.idea\dataSources.xml" timestamp="1602104604288" />
+  </project-files>
+</conversion>

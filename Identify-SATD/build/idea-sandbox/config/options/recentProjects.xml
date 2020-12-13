@@ -1,0 +1,51 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/paladin_website">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1iSuT655QblXzhjVreq8NyD0Uzg">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.7319.50" />
+              <option name="buildTimestamp" value="1600122067836" />
+              <frame x="260" y="20" width="1400" height="1000" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1606885320492" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/Champloo_Management">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1iZABrYwtj6vIgJgA9cDBaqVuq9">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.7319.50" />
+              <option name="buildTimestamp" value="1600122065721" />
+              <frame x="-8" y="-8" width="1936" height="1056" extendedState="6" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1606936512444" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/TechLord-v2">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="1l5ECMtYQWhF17fsKvFFBezag0q">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.7319.50" />
+              <option name="buildTimestamp" value="1600122062690" />
+              <frame x="260" y="20" width="1400" height="1000" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1607827092644" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/IdeaProjects/TechLord-v2" />
+        <option value="$USER_HOME$/IdeaProjects/Champloo_Management" />
+        <option value="$USER_HOME$/IdeaProjects/paladin_website" />
+      </list>
+    </option>
+  </component>
+</application>

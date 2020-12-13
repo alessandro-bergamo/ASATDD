@@ -1,13 +1,15 @@
-core/util/RetrieveCommitsLog.java
- core.util.RetrieveCommitsLog
-core/entities/detector/IdentificationDetector.java
- core.entities.detector.IdentificationDetector
+application/presenters/BasicPresenter.java
+ application.presenters.BasicPresenter
 core/entities/detector/SATDDetector.java
  core.entities.detector.SATDDetector
-core/entities/Commit.java
- core.entities.Commit
+core/entities/detector/DummySATDDetector.java
+ core.entities.detector.DummySATDDetector
 core/entities/detector/ImpossibleIdentification.java
  core.entities.detector.ImpossibleIdentification
+core/entities/Commit.java
+ core.entities.Commit
+core/util/RetrieveCommitsLog.java
+ core.util.RetrieveCommitsLog
 application/actions/FindSATDAction.java
  application.actions.FindSATDAction
 core/usecases/identifySATD/IdentifySATDInteractor.java

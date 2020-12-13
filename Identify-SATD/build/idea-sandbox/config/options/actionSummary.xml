@@ -1,0 +1,24 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <data>
+      <entry key="CloseProject">
+        <ActionSummary times="3" last="1606936532156" />
+      </entry>
+      <entry key="SaveAll">
+        <ActionSummary times="1" last="1606945241808" />
+      </entry>
+      <entry key="WelcomeScreen.OpenProject">
+        <ActionSummary times="3" last="1606885392435" />
+      </entry>
+      <entry key="com.intellij.ide.ReopenProjectAction">
+        <ActionSummary times="1" last="1606936535828" />
+      </entry>
+      <entry key="com.intellij.notification.EventLogConsole$ClearLogAction">
+        <ActionSummary times="2" last="1606930412117" />
+      </entry>
+      <entry key="com.intellij.openapi.ui.DialogWrapper$5">
+        <ActionSummary times="1" last="1606881442240" />
+      </entry>
+    </data>
+  </component>
+</application>

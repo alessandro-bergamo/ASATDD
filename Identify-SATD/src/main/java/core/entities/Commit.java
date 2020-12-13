@@ -1,20 +1,16 @@
 package core.entities;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Commit
 {
 
-    public Commit()
-    {
-        //Empty constructor
-    }
-
-    public Commit(String commitID, String commitMessage, String commitUser, int commitDate)
+    public Commit(String commitID, String commitUser, String commitMessage, Date commitDate)
     {
         this.commitID = commitID;
-        this.commitMessage = commitMessage;
         this.commitUser = commitUser;
+        this.commitMessage = commitMessage;
         this.commitDate = commitDate;
     }
 
@@ -22,21 +18,22 @@ public class Commit
 
     public void setCommitID(String commitID) { this.commitID = commitID; }
 
-    public String getCommitMessage() { return commitMessage; }
-
-    public void setCommitMessage(String commitMessage) { this.commitMessage = commitMessage; }
-
     public String getCommitUser() { return commitUser; }
 
     public void setCommitUser(String commitUser) { this.commitUser = commitUser; }
 
-    public int getCommitDate() { return commitDate; }
+    public String getCommitMessage() { return commitMessage; }
 
-    public void setCommitDate(int commitDate) { this.commitDate = commitDate; }
+    public void setCommitMessage(String commitMessage) { this.commitMessage = commitMessage; }
 
+    public Date getCommitDate() { return commitDate; }
 
+    public void setCommitDate(Date commitDate) { this.commitDate = commitDate; }
 
-    protected String commitID, commitMessage, commitUser;
-    protected int commitDate;
+    @Override
+    public String toString() { return "Commit ID: "+commitID+" -/- Commit User: "+commitUser+" -/- Commit Date: "+commitDate+" -/- Commit Message: "+commitMessage;}
+
+    protected String commitID, commitUser, commitMessage;
+    protected Date commitDate;
 
 }

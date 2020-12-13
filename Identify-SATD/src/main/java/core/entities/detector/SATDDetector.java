@@ -7,6 +7,6 @@ import java.util.List;
 public interface SATDDetector
 {
 
-    boolean detectSATD(List<Commit> commits);
+    List<Commit> detectSATD(List<Commit> commits);
 
 }

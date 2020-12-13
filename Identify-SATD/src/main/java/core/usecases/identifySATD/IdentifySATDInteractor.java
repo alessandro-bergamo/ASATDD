@@ -1,34 +1,42 @@
 package core.usecases.identifySATD;
 
 import core.entities.Commit;
+import core.entities.detector.ImpossibleIdentification;
 import core.entities.detector.SATDDetector;
 import core.util.RetrieveCommitsLog;
 import org.eclipse.jgit.api.errors.GitAPIException;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class IdentifySATDInteractor
 {
 
-    public IdentifySATDInteractor(RetrieveCommitsLog retrieveCommitsLog, SATDDetector SATDDetector)
+    public IdentifySATDInteractor(RetrieveCommitsLog retrieveCommitsLog, SATDDetector SATDDetector, String repository_path)
     {
         this.retrieveCommitsLog = retrieveCommitsLog;
         this.SATDDetector = SATDDetector;
+        this.repository_path = repository_path;
     }
 
 
     //Gestire le eccezioni
-    public boolean execute() throws IOException, GitAPIException
+    public List<Commit> execute() throws ImpossibleIdentification
     {
-        ArrayList<Commit> commits = retrieveCommitsLog.retrieveCommitsLogs();
-
-        return SATDDetector.detectSATD(commits);
+        try {
+            ArrayList<Commit> commits = retrieveCommitsLog.retrieveCommitsLogs(repository_path);
+            return SATDDetector.detectSATD(commits);
+        } catch(Exception e) {
+            throw new ImpossibleIdentification();
+        }
     }
 
 
 
-    private RetrieveCommitsLog retrieveCommitsLog;
-    private SATDDetector SATDDetector;
+    private final RetrieveCommitsLog retrieveCommitsLog;
+    private final SATDDetector SATDDetector;
+    private final String repository_path;
 
 }

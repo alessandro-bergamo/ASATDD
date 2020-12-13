@@ -14,8 +14,6 @@
     ·
     <a href="https://github.com/alessandro-bergamo/Identify-SATD/issues">Richiedi Feature</a>
   </p>
-</p>
-
 
 
 <!-- TABLE OF CONTENTS -->
@@ -26,7 +24,7 @@
 * [Instructions](#instructions)
 * [Decisions](#decisions)
 * [Contact](#contact)
-
+* [Credits](#credits)
 
 
 <!-- ABOUT THE PROJECT -->
@@ -34,25 +32,31 @@
 
 <h3>Identify SATD</h3>
 
-Un "Self Admitted Technical Debt" è un modo per segnalare di aver pubblicato del codice incompleto, che richiede un rifacimento, che produce errori o che è giusto per far funzionare l'intero sistema.
-Questo plugin mira ad identificarli attraverso l'analisi testuale del "Commit Message", disponibile dopo la pubblicazione del codice al "master" branch.
+Un "Self Admitted Technical Debt" è un modo per segnalare di aver pubblicato del codice incompleto, che richiede un rifacimento, che produce errori o che è realizzato solamente per far funzionare l'intero sistema ma che richiederà future modifiche.
+
+Questo plugin mira ad identificarli e mostrarli attraverso l'analisi testuale del "Commit Message", disponibile dopo la pubblicazione del codice al "master" branch.
 
 
 ### Built With
 Il plugin è realizzato interamente in:
-* [JetBrains IntelliJ](https://www.jetbrains.com/idea/)
-* [Java](https://www.java.com/)
-* [Weka](https://www.cs.waikato.ac.nz/ml/weka/)
+* [JetBrains IntelliJ - v.2020.2.3](https://www.jetbrains.com/idea/)
+* [Java - v.1.8.0](https://www.java.com/)
+* [Weka - v.3.8.4](https://www.cs.waikato.ac.nz/ml/weka/)
+* [JGit - v.5.9.0](https://www.eclipse.org/jgit/)
+* [SLF4J - v.1.7.30](http://www.slf4j.org/)
+
 
 <!-- Instructions -->
 ## Instructions
 
 Il plugin si sofferma su pochi ed incisivi passi, tra cui:
 
-1. Clone della repository github e recupero dei commit message
-2. Analisi testuale di ogni commit message
-3. Identificazione delle possibili "keywords" potenzialmente rappresentanti dei SATD
-4. Segnalazione del Commit ID e del commit message identificato al passo precedente
+1. Clone della repository github 
+2. Rrecupero dei commit message
+3. Analisi testuale di ogni commit message
+4. Identificazione delle possibili "keywords" potenzialmente rappresentanti dei Self-Admitted Technical Debt
+5. Segnalazione del Commit ID, user, date e message identificati al passo precedente
+
 
 <!-- Decisions -->
 ## Decisions
@@ -66,34 +70,23 @@ Il secondo modulo presenta la parte di interazione tra il core del plugin con l'
 
 Questa scelta è stata presa per rendere il core del plugin ben separato dall'IDE in cui è stato sviluppato il plugin, così da renderlo utile e soprattutto riutilizzabile con altri IDE al di fuori di IntelliJ, mantenendo la parte di logica del software separata dalla parte di input/output.
 
+* 17/11/2020
 
+E' stato deciso di implementare il plugin con una classe temporanea "DummySATDDetector" che va a sostituire, per l'appunto, temporaneamente il classificatore finale che verrà utilizzato. 
 
+Il tutto è stato progettato ed implementato in modo da favorire la futura aggiunta del classificatore finale rispettando le dipendenze tra le varie classi e rendendo il tutto più portabile e manutenibile soprattutto garantendo l'utilizzo anche in seguito a future implementazioni del classificatore.   
+ 
+* 24/11/2020
+ 
+E' stato deciso di implementare una interfaccia grafica di base che desse l'idea di mostrare i risultati prodotti dal classificatore. 
+
+L'interfaccia è realizzata attraverso una lista di "Commit" mostrati a video tramite una Java Graphic User Interface. Successivamente, è stato deciso di aggiungere funzionalità a questa GUI, attraverso l'utilizzo di shortcuts utili alla selezione rapida dell'elemento dalla lista.
+ 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@linkedin](https://www.linkedin.com/in/alessandro-bergamo-4a21b11ba/) - a.bergamo2@studenti.unisa.it
+Alessandro Bergamo - [@linkedin](https://www.linkedin.com/in/alessandro-bergamo-4a21b11ba/) - a.bergamo2@studenti.unisa.it
 
 Project Link: [https://github.com/alessandro-bergamo/Identify-SATD](https://github.com/alessandro-bergamo/Identify-SATD)
 
-
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
