@@ -23,14 +23,16 @@ public class IdentifySATDInteractor
 
 
     //Gestire le eccezioni
-    public List<Commit> execute() throws ImpossibleIdentification
+    public List<Commit> execute()
     {
         try {
             ArrayList<Commit> commits = retrieveCommitsLog.retrieveCommitsLogs(repository_path);
             return SATDDetector.detectSATD(commits);
         } catch(Exception e) {
-            throw new ImpossibleIdentification();
+            e.printStackTrace();
         }
+
+        return null;
     }
 
 

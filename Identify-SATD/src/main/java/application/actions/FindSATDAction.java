@@ -17,6 +17,7 @@ import com.intellij.psi.PsiDocumentManager;
 import com.intellij.psi.PsiFile;
 import core.entities.Commit;
 import core.entities.detector.DummySATDDetector;
+import core.entities.detector.RealSATDDetector;
 import core.usecases.identifySATD.IdentifySATDInteractor;
 import core.util.RetrieveCommitsLog;
 import org.eclipse.jgit.api.errors.GitAPIException;
@@ -42,10 +43,10 @@ public class FindSATDAction extends AnAction
                 Project project = e.getProject();
 
                 RetrieveCommitsLog retrieveCommitsLog = new RetrieveCommitsLog();
-                DummySATDDetector dummySATDDetector = new DummySATDDetector();
+                RealSATDDetector realSATDDetector = new RealSATDDetector();
 
                 try {
-                    IdentifySATDInteractor identifySATDInteractor = new IdentifySATDInteractor(retrieveCommitsLog, dummySATDDetector, Objects.requireNonNull(project).getBasePath());
+                    IdentifySATDInteractor identifySATDInteractor = new IdentifySATDInteractor(retrieveCommitsLog, realSATDDetector, Objects.requireNonNull(project).getBasePath());
                     SATD_found = identifySATDInteractor.execute();
                 } catch (Exception exception) {
                     Messages.showMessageDialog(e.getProject(), "Identification not successfull", "WARNING!", Messages.getErrorIcon());

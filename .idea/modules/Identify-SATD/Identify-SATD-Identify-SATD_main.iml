@@ -295,5 +295,6 @@
     </orderEntry>
     <orderEntry type="library" name="Gradle: org.eclipse.jgit:org.eclipse.jgit:5.9.0.202009080501-r" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.30" level="project" />
+    <orderEntry type="library" name="Gradle: nz.ac.waikato.cms.weka:weka-stable:3.8.4" level="project" />
   </component>
 </module>

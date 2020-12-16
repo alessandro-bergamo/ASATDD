@@ -6,7 +6,7 @@
   <p align="center">
     Identify SATD è un plugin per IntelliJ utile all'identificazione dei "Self Admitted Technical Debt"
     <br />
-    <a href="https://github.com/alessandro-bergamo/Identify-SATD"><strong>Esplora il codice »</strong></a>
+    <a href="https://github.com/alessandro-bergamo/Identify-SATD/tree/main/Identify-SATD/src"><strong>Esplora il codice »</strong></a>
     <br />
     <br />
     ·
