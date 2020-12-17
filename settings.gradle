@@ -1,2 +1,2 @@
-include 'Identify-SATD'
+rootProject.name = 'asead'
 
