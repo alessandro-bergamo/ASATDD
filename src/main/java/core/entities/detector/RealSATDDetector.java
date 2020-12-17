@@ -2,10 +2,7 @@ package core.entities.detector;
 
 import application.datareader.EnsembleLearner;
 import core.entities.Commit;
-import weka.core.Attribute;
-import weka.core.DenseInstance;
-import weka.core.Instance;
-import weka.core.Instances;
+import weka.core.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +25,7 @@ public class RealSATDDetector implements SATDDetector
         {
             commit_message = commits.get(I).getCommitMessage();
 
-            ArrayList<Attribute> attribute_list = new ArrayList<>();
+            /*ArrayList<Attribute> attribute_list = new ArrayList<>();
             Attribute attribute = new Attribute("commit_message", true);
             attribute_list.add(attribute);
 
@@ -40,18 +37,22 @@ public class RealSATDDetector implements SATDDetector
             instance.setDataset(data);
             instance.setValue(0, commit_message);
 
-            data.setClassIndex(data.numAttributes() - 1);
+            data.setClassIndex(data.numAttributes() - 1);*/
+
+            Instance instance = new SparseInstance(null);
 
             try {
-                result = ensembleLearner.classifyCommit(instance);
+                vote = ensembleLearner.classifyCommit(instance);
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
-            if(result > 0)
+            if(vote > 0)
             {
                 commits_identified.add(commits.get(I));
-                System.out.println("Commits identificati: "+commits_identified.size()+" VOTE: "+ result);
+                System.out.println("Commits identificati: "+commits_identified.size()+" VOTE: "+ vote);
+            } else {
+                System.out.println("NON SONO UN SATD");
             }
         }
 
@@ -62,6 +63,7 @@ public class RealSATDDetector implements SATDDetector
     private EnsembleLearner ensembleLearner;
     private final List<Commit> commits_identified;
     private String commit_message;
-    private double result;
+    private double vote;
 
 }
+

@@ -1,0 +1,30 @@
+core/entities/Document.java
+ core.entities.Document
+core/util/RetrieveCommitsLog.java
+ core.util.RetrieveCommitsLog
+core/usecases/identifySATD/IdentifySATDInteractor.java
+ core.usecases.identifySATD.IdentifySATDInteractor
+core/process/DataReader.java
+ core.process.DataReader
+application/presenters/BasicPresenter.java
+ application.presenters.BasicPresenter
+application/actions/testMain.java
+ application.actions.testMain
+application/actions/FindSATDAction.java
+ application.actions.FindSATDAction
+core/util/FileUtil.java
+ core.util.FileUtil
+core/util/WordSplit.java
+ core.util.WordSplit
+core/entities/detector/SATDDetector.java
+ core.entities.detector.SATDDetector
+core/entities/detector/DummySATDDetector.java
+ core.entities.detector.DummySATDDetector
+core/entities/Commit.java
+ core.entities.Commit
+core/entities/detector/ImpossibleIdentification.java
+ core.entities.detector.ImpossibleIdentification
+core/entities/detector/RealSATDDetector.java
+ core.entities.detector.RealSATDDetector
+application/datareader/EnsembleLearner.java
+ application.datareader.EnsembleLearner

@@ -40,26 +40,16 @@ public class EnsembleLearner
 
     public double classifyCommit(Instance instance) throws Exception
     {
-        vote = new double[] {0, 0, 0, 0, 0, 0, 0, 0};
+        vote = 0;
 
         for(Classifier classifier : classifiers)
         {
-            vote = classifier.distributionForInstance(instance);
+            vote += classifier.classifyInstance(instance);
         }
 
-        for(int I=0; I<vote.length; I++)
-        {
-            if(I==0)
-            {
-                result = vote[I];
-                continue;
-            }
+        System.out.println("CLASSIFYCOMMIT RIGA 50 VOTO: "+vote);
 
-            if(vote[I] > vote[I-1])
-                result = vote[I];
-        }
-
-        return result;
+        return vote;
     }
 
 
@@ -88,7 +78,7 @@ public class EnsembleLearner
             projects.add("jruby-1.4.0");
             projects.add("sql12");
 
-            List<Document> comments = DataReader.readComments("C:\\Users\\Alessandro\\IdeaProjects\\Identify-SATD\\Identify-SATD\\data\\");
+            List<Document> comments = DataReader.readComments("data"+ File.separator);
 
             for (int source = 0; source < projects.size(); source++)
             {
@@ -98,7 +88,7 @@ public class EnsembleLearner
                 List<Document> trainDoc = DataReader.selectProject(comments, projectForTraining);
 
                 // System.out.println("building dataset for training");
-                String trainingDataPath = "C:\\Users\\Alessandro\\IdeaProjects\\Identify-SATD\\Identify-SATD\\tmp\\trainingData.arff";
+                String trainingDataPath = "tmp"+ File.separator +"trainingData.arff";
                 DataReader.outputArffData(trainDoc, trainingDataPath);
 
                 // string to word vector (both for training and testing data)
@@ -111,7 +101,7 @@ public class EnsembleLearner
                 stw.setStemmer(stemmer);
 
                 WordsFromFile stopwords = new WordsFromFile();
-                stopwords.setStopwords(new File("dic/stopwords.txt"));
+                stopwords.setStopwords(new File("dic"+ File.separator +"stopwords.txt"));
                 stw.setStopwordsHandler(stopwords);
 
                 Instances trainSet = ConverterUtils.DataSource.read(trainingDataPath);
@@ -121,7 +111,7 @@ public class EnsembleLearner
 
                 ArffSaver saver = new ArffSaver();
                 saver.setInstances(trainSet);
-                saver.setFile(new File("./data/" + projects.get(source) + ".arff"));
+                saver.setFile(new File("data"+ File.separator + projects.get(source) + ".arff"));
                 saver.writeBatch();
 
                 // attribute selection for training data
@@ -146,15 +136,17 @@ public class EnsembleLearner
                 if(!directory_classifiers.isDirectory())
                     directory_classifiers.mkdirs();
 
-                SerializationHelper.write(System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "models" + File.separator + projects.get(source) + ".model", classifier);            }
+                SerializationHelper.write(System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "models" + File.separator + projects.get(source) + ".model", classifier);
+
+                classifiers.add(classifier);
+            }
         }
 
         return classifiers;
     }
 
 
-    private double[] vote;
-    private double result;
+    private double vote;
     private List<Classifier> classifiers;
     private Classifier classifier;
     private File directory_classifiers;
