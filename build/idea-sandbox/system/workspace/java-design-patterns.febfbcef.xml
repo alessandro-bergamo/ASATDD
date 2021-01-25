@@ -1,0 +1,180 @@
+<project version="4">
+  <component name="ExternalSystemProjectTracker">
+    <option name="projectSettingsTrackerStates">
+      <map>
+        <entry>
+          <key>
+            <Id>
+              <option name="externalProjectPath" value="java-design-patterns" />
+              <option name="systemId" value="MAVEN" />
+            </Id>
+          </key>
+          <value>
+            <Project>
+              <option name="settingsTracker">
+                <State>
+                  <option name="dirty" value="false" />
+                  <option name="settingsFiles">
+                    <map>
+                      <entry key="$PROJECT_DIR$/abstract-document/pom.xml" value="4092342350" />
+                      <entry key="$PROJECT_DIR$/abstract-factory/pom.xml" value="3066248412" />
+                      <entry key="$PROJECT_DIR$/acyclic-visitor/pom.xml" value="323711646" />
+                      <entry key="$PROJECT_DIR$/adapter/pom.xml" value="2182938149" />
+                      <entry key="$PROJECT_DIR$/aggregator-microservices/aggregator-service/pom.xml" value="67864926" />
+                      <entry key="$PROJECT_DIR$/aggregator-microservices/information-microservice/pom.xml" value="2648436598" />
+                      <entry key="$PROJECT_DIR$/aggregator-microservices/inventory-microservice/pom.xml" value="562096286" />
+                      <entry key="$PROJECT_DIR$/aggregator-microservices/pom.xml" value="637284358" />
+                      <entry key="$PROJECT_DIR$/ambassador/pom.xml" value="3811395395" />
+                      <entry key="$PROJECT_DIR$/api-gateway/api-gateway-service/pom.xml" value="1103081687" />
+                      <entry key="$PROJECT_DIR$/api-gateway/image-microservice/pom.xml" value="3055201568" />
+                      <entry key="$PROJECT_DIR$/api-gateway/pom.xml" value="2095791624" />
+                      <entry key="$PROJECT_DIR$/api-gateway/price-microservice/pom.xml" value="2247308706" />
+                      <entry key="$PROJECT_DIR$/arrange-act-assert/pom.xml" value="2760470336" />
+                      <entry key="$PROJECT_DIR$/async-method-invocation/pom.xml" value="2479629453" />
+                      <entry key="$PROJECT_DIR$/balking/pom.xml" value="33125662" />
+                      <entry key="$PROJECT_DIR$/bridge/pom.xml" value="3220659856" />
+                      <entry key="$PROJECT_DIR$/builder/pom.xml" value="882721378" />
+                      <entry key="$PROJECT_DIR$/business-delegate/pom.xml" value="4083305069" />
+                      <entry key="$PROJECT_DIR$/bytecode/pom.xml" value="86060812" />
+                      <entry key="$PROJECT_DIR$/caching/pom.xml" value="2825056645" />
+                      <entry key="$PROJECT_DIR$/callback/pom.xml" value="16885265" />
+                      <entry key="$PROJECT_DIR$/chain/pom.xml" value="405286515" />
+                      <entry key="$PROJECT_DIR$/circuit-breaker/pom.xml" value="3498597636" />
+                      <entry key="$PROJECT_DIR$/collection-pipeline/pom.xml" value="4145361766" />
+                      <entry key="$PROJECT_DIR$/combinator/pom.xml" value="1619390698" />
+                      <entry key="$PROJECT_DIR$/command/pom.xml" value="94741697" />
+                      <entry key="$PROJECT_DIR$/commander/pom.xml" value="4292508480" />
+                      <entry key="$PROJECT_DIR$/composite/pom.xml" value="2852473771" />
+                      <entry key="$PROJECT_DIR$/converter/pom.xml" value="1114984295" />
+                      <entry key="$PROJECT_DIR$/cqrs/pom.xml" value="3335396143" />
+                      <entry key="$PROJECT_DIR$/dao/pom.xml" value="1437746330" />
+                      <entry key="$PROJECT_DIR$/data-bus/pom.xml" value="312032847" />
+                      <entry key="$PROJECT_DIR$/data-locality/pom.xml" value="3801400963" />
+                      <entry key="$PROJECT_DIR$/data-mapper/pom.xml" value="2557158292" />
+                      <entry key="$PROJECT_DIR$/data-transfer-object-enum-impl/pom.xml" value="1251992865" />
+                      <entry key="$PROJECT_DIR$/data-transfer-object/pom.xml" value="1513372930" />
+                      <entry key="$PROJECT_DIR$/decorator/pom.xml" value="1449225547" />
+                      <entry key="$PROJECT_DIR$/delegation/pom.xml" value="3645587543" />
+                      <entry key="$PROJECT_DIR$/dependency-injection/pom.xml" value="3852290604" />
+                      <entry key="$PROJECT_DIR$/dirty-flag/pom.xml" value="3458908263" />
+                      <entry key="$PROJECT_DIR$/double-buffer/pom.xml" value="1581343757" />
+                      <entry key="$PROJECT_DIR$/double-checked-locking/pom.xml" value="732232540" />
+                      <entry key="$PROJECT_DIR$/double-dispatch/pom.xml" value="1741298" />
+                      <entry key="$PROJECT_DIR$/eip-aggregator/pom.xml" value="410085138" />
+                      <entry key="$PROJECT_DIR$/eip-message-channel/pom.xml" value="776916245" />
+                      <entry key="$PROJECT_DIR$/eip-publish-subscribe/pom.xml" value="3240879173" />
+                      <entry key="$PROJECT_DIR$/eip-splitter/pom.xml" value="2116925494" />
+                      <entry key="$PROJECT_DIR$/eip-wire-tap/pom.xml" value="3770862523" />
+                      <entry key="$PROJECT_DIR$/event-aggregator/pom.xml" value="1772723332" />
+                      <entry key="$PROJECT_DIR$/event-asynchronous/pom.xml" value="1284562758" />
+                      <entry key="$PROJECT_DIR$/event-driven-architecture/pom.xml" value="328571587" />
+                      <entry key="$PROJECT_DIR$/event-queue/pom.xml" value="279963988" />
+                      <entry key="$PROJECT_DIR$/event-sourcing/pom.xml" value="4014215715" />
+                      <entry key="$PROJECT_DIR$/execute-around/pom.xml" value="318468141" />
+                      <entry key="$PROJECT_DIR$/extension-objects/pom.xml" value="813329474" />
+                      <entry key="$PROJECT_DIR$/facade/pom.xml" value="1928931632" />
+                      <entry key="$PROJECT_DIR$/factory-kit/pom.xml" value="3440187313" />
+                      <entry key="$PROJECT_DIR$/factory-method/pom.xml" value="4057791960" />
+                      <entry key="$PROJECT_DIR$/factory/pom.xml" value="110517058" />
+                      <entry key="$PROJECT_DIR$/feature-toggle/pom.xml" value="197463761" />
+                      <entry key="$PROJECT_DIR$/filterer/pom.xml" value="943269698" />
+                      <entry key="$PROJECT_DIR$/fluentinterface/pom.xml" value="3041747725" />
+                      <entry key="$PROJECT_DIR$/flux/pom.xml" value="2970453441" />
+                      <entry key="$PROJECT_DIR$/flyweight/pom.xml" value="2987317663" />
+                      <entry key="$PROJECT_DIR$/front-controller/pom.xml" value="4204867501" />
+                      <entry key="$PROJECT_DIR$/game-loop/pom.xml" value="975774143" />
+                      <entry key="$PROJECT_DIR$/guarded-suspension/pom.xml" value="3501239106" />
+                      <entry key="$PROJECT_DIR$/half-sync-half-async/pom.xml" value="55542941" />
+                      <entry key="$PROJECT_DIR$/hexagonal/pom.xml" value="395512992" />
+                      <entry key="$PROJECT_DIR$/intercepting-filter/pom.xml" value="2435431133" />
+                      <entry key="$PROJECT_DIR$/interpreter/pom.xml" value="561677658" />
+                      <entry key="$PROJECT_DIR$/iterator/pom.xml" value="3047275012" />
+                      <entry key="$PROJECT_DIR$/layers/pom.xml" value="3410349518" />
+                      <entry key="$PROJECT_DIR$/lazy-loading/pom.xml" value="249589116" />
+                      <entry key="$PROJECT_DIR$/leader-election/pom.xml" value="2954321440" />
+                      <entry key="$PROJECT_DIR$/leader-followers/pom.xml" value="4026022695" />
+                      <entry key="$PROJECT_DIR$/marker/pom.xml" value="1409029917" />
+                      <entry key="$PROJECT_DIR$/master-worker-pattern/pom.xml" value="487968452" />
+                      <entry key="$PROJECT_DIR$/mediator/pom.xml" value="1204164483" />
+                      <entry key="$PROJECT_DIR$/memento/pom.xml" value="2932392971" />
+                      <entry key="$PROJECT_DIR$/model-view-controller/pom.xml" value="3068156711" />
+                      <entry key="$PROJECT_DIR$/model-view-presenter/pom.xml" value="3950945395" />
+                      <entry key="$PROJECT_DIR$/module/pom.xml" value="2822238850" />
+                      <entry key="$PROJECT_DIR$/monad/pom.xml" value="3124578649" />
+                      <entry key="$PROJECT_DIR$/monostate/pom.xml" value="3608677551" />
+                      <entry key="$PROJECT_DIR$/multiton/pom.xml" value="254909041" />
+                      <entry key="$PROJECT_DIR$/mute-idiom/pom.xml" value="1045906222" />
+                      <entry key="$PROJECT_DIR$/mutex/pom.xml" value="3463703884" />
+                      <entry key="$PROJECT_DIR$/naked-objects/dom/pom.xml" value="3576192386" />
+                      <entry key="$PROJECT_DIR$/naked-objects/fixture/pom.xml" value="3730731861" />
+                      <entry key="$PROJECT_DIR$/naked-objects/integtests/pom.xml" value="2525638436" />
+                      <entry key="$PROJECT_DIR$/naked-objects/pom.xml" value="2689438593" />
+                      <entry key="$PROJECT_DIR$/naked-objects/webapp/pom.xml" value="291245190" />
+                      <entry key="$PROJECT_DIR$/null-object/pom.xml" value="4092615069" />
+                      <entry key="$PROJECT_DIR$/object-mother/pom.xml" value="2005788308" />
+                      <entry key="$PROJECT_DIR$/object-pool/pom.xml" value="804825069" />
+                      <entry key="$PROJECT_DIR$/observer/pom.xml" value="3552589061" />
+                      <entry key="$PROJECT_DIR$/page-object/pom.xml" value="1855982987" />
+                      <entry key="$PROJECT_DIR$/page-object/sample-application/pom.xml" value="2136865069" />
+                      <entry key="$PROJECT_DIR$/page-object/test-automation/pom.xml" value="3092109518" />
+                      <entry key="$PROJECT_DIR$/partial-response/pom.xml" value="2722645002" />
+                      <entry key="$PROJECT_DIR$/pipeline/pom.xml" value="4003644070" />
+                      <entry key="$PROJECT_DIR$/poison-pill/pom.xml" value="1164661669" />
+                      <entry key="$PROJECT_DIR$/pom.xml" value="2570988275" />
+                      <entry key="$PROJECT_DIR$/priority-queue/pom.xml" value="265707710" />
+                      <entry key="$PROJECT_DIR$/private-class-data/pom.xml" value="791674447" />
+                      <entry key="$PROJECT_DIR$/producer-consumer/pom.xml" value="3103763139" />
+                      <entry key="$PROJECT_DIR$/promise/pom.xml" value="3050926557" />
+                      <entry key="$PROJECT_DIR$/property/pom.xml" value="709473784" />
+                      <entry key="$PROJECT_DIR$/prototype/pom.xml" value="1144520129" />
+                      <entry key="$PROJECT_DIR$/proxy/pom.xml" value="3038306682" />
+                      <entry key="$PROJECT_DIR$/queue-load-leveling/pom.xml" value="1727697464" />
+                      <entry key="$PROJECT_DIR$/reactor/pom.xml" value="503533950" />
+                      <entry key="$PROJECT_DIR$/reader-writer-lock/pom.xml" value="3076177774" />
+                      <entry key="$PROJECT_DIR$/registry/pom.xml" value="3219259803" />
+                      <entry key="$PROJECT_DIR$/repository/pom.xml" value="2564005636" />
+                      <entry key="$PROJECT_DIR$/resource-acquisition-is-initialization/pom.xml" value="4212776549" />
+                      <entry key="$PROJECT_DIR$/retry/pom.xml" value="1731240578" />
+                      <entry key="$PROJECT_DIR$/role-object/pom.xml" value="3738745738" />
+                      <entry key="$PROJECT_DIR$/saga/pom.xml" value="2492637005" />
+                      <entry key="$PROJECT_DIR$/semaphore/pom.xml" value="2221977839" />
+                      <entry key="$PROJECT_DIR$/separated-interface/pom.xml" value="1389648435" />
+                      <entry key="$PROJECT_DIR$/servant/pom.xml" value="3988076120" />
+                      <entry key="$PROJECT_DIR$/serverless/pom.xml" value="1717233864" />
+                      <entry key="$PROJECT_DIR$/service-layer/pom.xml" value="3085359950" />
+                      <entry key="$PROJECT_DIR$/service-locator/pom.xml" value="2320727976" />
+                      <entry key="$PROJECT_DIR$/sharding/pom.xml" value="2686150603" />
+                      <entry key="$PROJECT_DIR$/singleton/pom.xml" value="1850781165" />
+                      <entry key="$PROJECT_DIR$/spatial-partition/pom.xml" value="735762831" />
+                      <entry key="$PROJECT_DIR$/special-case/pom.xml" value="1858490200" />
+                      <entry key="$PROJECT_DIR$/specification/pom.xml" value="2817253839" />
+                      <entry key="$PROJECT_DIR$/state/pom.xml" value="460811650" />
+                      <entry key="$PROJECT_DIR$/step-builder/pom.xml" value="2857244930" />
+                      <entry key="$PROJECT_DIR$/strangler/pom.xml" value="255098810" />
+                      <entry key="$PROJECT_DIR$/strategy/pom.xml" value="2674928832" />
+                      <entry key="$PROJECT_DIR$/subclass-sandbox/pom.xml" value="893455929" />
+                      <entry key="$PROJECT_DIR$/template-method/pom.xml" value="2290209239" />
+                      <entry key="$PROJECT_DIR$/thread-pool/pom.xml" value="1542549248" />
+                      <entry key="$PROJECT_DIR$/throttling/pom.xml" value="3327923918" />
+                      <entry key="$PROJECT_DIR$/tls/pom.xml" value="1592016247" />
+                      <entry key="$PROJECT_DIR$/tolerant-reader/pom.xml" value="2837610495" />
+                      <entry key="$PROJECT_DIR$/trampoline/pom.xml" value="111532428" />
+                      <entry key="$PROJECT_DIR$/transaction-script/pom.xml" value="969616062" />
+                      <entry key="$PROJECT_DIR$/twin/pom.xml" value="1378322904" />
+                      <entry key="$PROJECT_DIR$/typeobjectpattern/pom.xml" value="2858853810" />
+                      <entry key="$PROJECT_DIR$/unit-of-work/pom.xml" value="395345788" />
+                      <entry key="$PROJECT_DIR$/update-method/pom.xml" value="3929617998" />
+                      <entry key="$PROJECT_DIR$/value-object/pom.xml" value="3068806024" />
+                      <entry key="$PROJECT_DIR$/version-number/pom.xml" value="751898640" />
+                      <entry key="$PROJECT_DIR$/visitor/pom.xml" value="3872124265" />
+                    </map>
+                  </option>
+                </State>
+              </option>
+            </Project>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

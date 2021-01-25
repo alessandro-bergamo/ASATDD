@@ -1,0 +1,75 @@
+{
+  "appInfo" : {
+    "build" : "202.7319.50",
+    "buildDate" : "Tue, 15 Sep 2020 00:21:47 +0200",
+    "productCode" : "IC",
+    "generated" : "Fri, 22 Jan 2021 04:20:07 +0100",
+    "os" : "Windows 10 10.0",
+    "runtime" : "JetBrains s.r.o. 11.0.8 11.0.8+10-b944.31"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "java-design-patterns",
+    "numberOfFileProviders" : 1,
+    "totalNumberOfFiles" : 1439,
+    "times" : {
+      "indexingTime" : "3 s 506 ms",
+      "scanFilesTime" : "1 s 946 ms",
+      "pushPropertiesTime" : "229 ms",
+      "indexExtensionsTime" : "1 ms",
+      "pushPropertiesStart" : "Fri, 22 Jan 2021 04:20:04 +0100",
+      "pushPropertiesEnd" : "Fri, 22 Jan 2021 04:20:04 +0100",
+      "scanFilesStart" : "Fri, 22 Jan 2021 04:20:04 +0100",
+      "scanFilesEnd" : "Fri, 22 Jan 2021 04:20:06 +0100",
+      "indexExtensionsStart" : "Fri, 22 Jan 2021 04:20:04 +0100",
+      "indexExtensionsEnd" : "Fri, 22 Jan 2021 04:20:04 +0100",
+      "indexingStart" : "Fri, 22 Jan 2021 04:20:04 +0100",
+      "indexingEnd" : "Fri, 22 Jan 2021 04:20:07 +0100"
+    },
+    "numberOfIndexingThreads" : 3,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "JAVA",
+      "partOfTotalIndexingTime" : "100,0%",
+      "partOfTotalContentLoadingTime" : "100,0%",
+      "totalNumberOfFiles" : 1439,
+      "totalFilesSize" : "3,52 MB",
+      "indexingSpeed" : "221,42 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'java-design-patterns'",
+        "numberOfFiles" : 1439,
+        "totalFilesSize" : "3,52 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : "100,0%",
+      "totalNumberOfFiles" : 1439,
+      "totalFilesSize" : "3,52 MB",
+      "indexingSpeed" : "221,42 MB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Module 'java-design-patterns'",
+      "totalNumberOfFiles" : 1439,
+      "totalIndexingTime" : "1 s 307 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 1439,
+        "totalFilesSize" : "3,52 MB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    } ]
+  }
+}

@@ -1,32 +1,14 @@
 package core.util;
 
-import com.intellij.ide.ui.EditorOptionsTopHitProvider;
-import com.intellij.openapi.fileEditor.OpenFileDescriptor;
-import com.thoughtworks.xstream.core.util.ObjectIdDictionary;
 import core.entities.Commit;
-import core.entities.detector.DummySATDDetector;
 import core.entities.detector.ImpossibleIdentification;
 import org.eclipse.jgit.api.Git; //inserire nel readme l'utlizzo di questa libreria
-import org.eclipse.jgit.api.errors.GitAPIException;
-import org.eclipse.jgit.diff.DiffEntry;
-import org.eclipse.jgit.diff.DiffFormatter;
-import org.eclipse.jgit.diff.RawTextComparator;
 import org.eclipse.jgit.lib.*;
 import org.eclipse.jgit.revwalk.RevCommit;
-import org.eclipse.jgit.revwalk.RevWalk;
-import org.eclipse.jgit.treewalk.CanonicalTreeParser;
-import org.eclipse.jgit.treewalk.EmptyTreeIterator;
-import org.eclipse.jgit.treewalk.FileTreeIterator;
-import org.eclipse.jgit.treewalk.TreeWalk;
-import org.eclipse.jgit.util.io.DisabledOutputStream;
 
 
 import java.io.File;
-import java.io.IOException;
-import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class RetrieveCommitsLog
 {
@@ -38,7 +20,7 @@ public class RetrieveCommitsLog
     }
 
 
-    public ArrayList<Commit> retrieveCommitsLogs(String repository_path)
+    public List<Commit> retrieveCommitsLogs(String repository_path)
     {
         try {
             repository = Git.open(new File(repository_path)).getRepository();
@@ -102,7 +84,9 @@ public class RetrieveCommitsLog
             logCommits.add(commit);
         }
 
-        return logCommits; //CAMBIARE CIO CHE TORNA QUESTO METODO SE NECESSARIO
+        Collections.reverse(logCommits);
+
+        return logCommits;
     }
 
 

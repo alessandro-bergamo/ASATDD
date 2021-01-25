@@ -22,20 +22,18 @@ public class testMain
         RetrieveCommitsLog retrieveCommitsLog = new RetrieveCommitsLog();
         RealSATDDetector realSATDDetector = new RealSATDDetector();
 
-        List<Commit> commits = new ArrayList<>();
+        List<Commit> commits = retrieveCommitsLog.retrieveCommitsLogs("C://Users//Alessandro//IdeaProjects//testrepositoryforsatd");
 
-        for(int I=0; I<10; I++)
-        {
-            Commit commit = new Commit(String.valueOf(I), "Alessandro Bergamo", "good commit", new Date());
-
-            commits.add(commit);
+        try {
+            SATD_found = realSATDDetector.detectSATD(commits);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
-        Commit commitPEZZOTTO = new Commit("pezzott@1937", "Alessandro Bergamo", "something bad happened, remove this code, get rid of this", new Date());
-
-        commits.add(commitPEZZOTTO);
-
-        realSATDDetector.detectSATD(commits);
+        for(Commit satd_commit : SATD_found)
+        {
+            System.out.println("COMMIT ID: "+ satd_commit.getCommitID() + "\nCOMMIT USER: " + satd_commit.getCommitUser() + "\nCOMMIT MESSAGE: " + satd_commit.getCommitMessage() + "\nCOMMIT DATE: " + satd_commit.getCommitDate() + "\n");
+        }
     }
 
 }

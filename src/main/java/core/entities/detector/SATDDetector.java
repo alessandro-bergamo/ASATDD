@@ -7,6 +7,6 @@ import java.util.List;
 public interface SATDDetector
 {
 
-    List<Commit> detectSATD(List<Commit> commits) throws ImpossibleIdentification;
+    List<Commit> detectSATD(List<Commit> commits) throws Exception;
 
 }

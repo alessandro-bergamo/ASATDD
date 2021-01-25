@@ -1,69 +1,208 @@
 package core.entities.detector;
 
-import application.datareader.EnsembleLearner;
 import core.entities.Commit;
-import weka.core.*;
+import core.entities.Document;
+import core.process.DataReader;
+import core.util.FileUtil;
+import org.apache.xmlbeans.impl.regex.Match;
+import weka.attributeSelection.InfoGainAttributeEval;
+import weka.attributeSelection.Ranker;
+import weka.classifiers.Classifier;
+import weka.classifiers.bayes.NaiveBayesMultinomial;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.SerializationHelper;
+import weka.core.converters.ConverterUtils;
+import weka.core.converters.ConverterUtils.DataSource;
+import weka.core.stemmers.SnowballStemmer;
+import weka.core.stopwords.WordsFromFile;
+import weka.filters.Filter;
+import weka.filters.supervised.attribute.AttributeSelection;
 
+import weka.filters.unsupervised.attribute.StringToWordVector;
+
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 public class RealSATDDetector implements SATDDetector
 {
 
+    private int J = 0;
+
     public RealSATDDetector()
     {
         super();
 
+        index_identified = new ArrayList<>();
         commits_identified = new ArrayList<>();
-        ensembleLearner = new EnsembleLearner();
     }
 
+
     @Override
-    public List<Commit> detectSATD(List<Commit> commits) throws ImpossibleIdentification
+    public List<Commit> detectSATD(List<Commit> commits) throws Exception
     {
-        for(int I=0; I<commits.size(); I++)
-        {
-            commit_message = commits.get(I).getCommitMessage();
+        String dataDirectoryPath = System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "data";
+        File dataFileDirectory = new File(dataDirectoryPath);
 
-            /*ArrayList<Attribute> attribute_list = new ArrayList<>();
-            Attribute attribute = new Attribute("commit_message", true);
-            attribute_list.add(attribute);
-
-            Instances data = new Instances("Instances", attribute_list, 0);
-            Instance instance = new DenseInstance(data.numAttributes());
-
-            data.add(instance);
-
-            instance.setDataset(data);
-            instance.setValue(0, commit_message);
-
-            data.setClassIndex(data.numAttributes() - 1);*/
-
-            Instance instance = new SparseInstance(null);
-
-            try {
-                vote = ensembleLearner.classifyCommit(instance);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            if(vote > 0)
+        if(!dataFileDirectory.isDirectory())
+            dataFileDirectory.mkdirs();
+        else {
+            if(dataFileDirectory.listFiles().length != 0)
             {
-                commits_identified.add(commits.get(I));
-                System.out.println("Commits identificati: "+commits_identified.size()+" VOTE: "+ vote);
-            } else {
-                System.out.println("NON SONO UN SATD");
+                for(File file : dataFileDirectory.listFiles())
+                    file.delete();
             }
         }
 
-        return commits_identified;
+        if(dataFileDirectory.isDirectory() && dataFileDirectory.listFiles().length == 0)
+        {
+            List<String> commit_messages = new ArrayList<>();
+
+            for(int I=0; I<commits.size(); I++)
+            {
+                String commitMessage = commits.get(I).getCommitMessage();
+                commitMessage = commitMessage.replace("\n", " ").replace("\r", "");
+
+                commit_messages.add("// " + commitMessage);
+            }
+
+            FileUtil.writeLinesToFile(commit_messages, dataFileDirectory + File.separator + "comments");
+            FileUtil.removeBlankLines(dataDirectoryPath + File.separator + "comments");
+        }
+
+        List<Document> comments = DataReader.readComments(dataFileDirectory + File.separator);
+
+        String testDataPath = dataFileDirectory + File.separator + "testData.arff";
+        DataReader.outputArffData(comments, testDataPath);
+
+        StringToWordVector stw = new StringToWordVector(100000);
+        stw.setOutputWordCounts(true);
+        stw.setIDFTransform(true);
+        stw.setTFTransform(true);
+
+        SnowballStemmer stemmer = new SnowballStemmer();
+        stw.setStemmer(stemmer);
+
+        WordsFromFile stopwords = new WordsFromFile();
+        stopwords.setStopwords(new File("dic/stopwords.txt"));
+        stw.setStopwordsHandler(stopwords);
+
+        Instances commitData = DataSource.read(testDataPath);
+        stw.setInputFormat(commitData);
+        commitData = Filter.useFilter(commitData, stw);
+        commitData.setClassIndex(0);
+
+        AttributeSelection attSelection = new AttributeSelection();
+        Ranker ranker = new Ranker();
+        ranker.setNumToSelect((int) (commitData.numAttributes() * ratio));
+        InfoGainAttributeEval ifg = new InfoGainAttributeEval();
+        attSelection.setEvaluator(ifg);
+        attSelection.setSearch(ranker);
+        attSelection.setInputFormat(commitData);
+
+        commitData = Filter.useFilter(commitData, attSelection);
+
+        try {
+            index_identified = classifyCommit(commitData);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        if(index_identified.isEmpty())
+            return null;
+        else {
+            for(Integer index : index_identified)
+                commits_identified.add(commits.get(index));
+
+            return commits_identified;
+        }
     }
 
 
-    private EnsembleLearner ensembleLearner;
-    private final List<Commit> commits_identified;
-    private String commit_message;
-    private double vote;
+    public Classifier loadOrTrainClassifier() throws Exception
+    {
+        Classifier classifier;
+
+        String path = System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "models";
+        directory_classifiers = new File(path);
+
+        String classifierFileName = directory_classifiers + File.separator + "SATDClassifier.model";
+        String trainingDataPath = "data" + File.separator + "trainingData.arff";
+        String stopwordsPath = "dic" + File.separator + "stopwords.txt";
+
+        if(directory_classifiers.isDirectory() && directory_classifiers.listFiles().length == 1)
+        {
+            classifier = (Classifier) SerializationHelper.read(classifierFileName);
+        } else {
+            StringToWordVector stw = new StringToWordVector(100000);
+            stw.setOutputWordCounts(true);
+            stw.setIDFTransform(true);
+            stw.setTFTransform(true);
+
+            SnowballStemmer stemmer = new SnowballStemmer();
+            stw.setStemmer(stemmer);
+
+            WordsFromFile stopwords = new WordsFromFile();
+            stopwords.setStopwords(new File(stopwordsPath));
+            stw.setStopwordsHandler(stopwords);
+
+            Instances trainSet = ConverterUtils.DataSource.read(trainingDataPath);
+            stw.setInputFormat(trainSet);
+            trainSet = Filter.useFilter(trainSet, stw);
+            trainSet.setClassIndex(0);
+
+            AttributeSelection attSelection = new AttributeSelection();
+
+            Ranker ranker = new Ranker();
+            ranker.setNumToSelect((int) (trainSet.numAttributes() * ratio));
+
+            InfoGainAttributeEval ifg = new InfoGainAttributeEval();
+            attSelection.setEvaluator(ifg);
+            attSelection.setSearch(ranker);
+            attSelection.setInputFormat(trainSet);
+
+            trainSet = Filter.useFilter(trainSet, attSelection);
+
+            classifier = new NaiveBayesMultinomial();
+            classifier.buildClassifier(trainSet);
+
+            directory_classifiers = new File(path);
+
+            if(!directory_classifiers.isDirectory())
+                directory_classifiers.mkdirs();
+
+            SerializationHelper.write(classifierFileName, classifier);
+        }
+
+        return classifier;
+    }
+
+
+    private List<Integer> classifyCommit(Instances instances) throws Exception
+    {
+        Classifier classifier = loadOrTrainClassifier();
+
+        for(int I=0; I<instances.numInstances(); I++)
+        {
+            Instance instance = instances.get(I);
+
+            double result = classifier.classifyInstance(instance);
+
+            if(result == 1.0)
+                index_identified.add(I);
+
+        }
+
+        return index_identified;
+    }
+
+
+
+    private List<Integer> index_identified;
+    private List<Commit> commits_identified;
+    private double ratio = 0.1;
+    private File directory_classifiers;
 
 }
 

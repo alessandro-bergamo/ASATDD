@@ -1,0 +1,51 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <data>
+      <entry key="CheckinFiles">
+        <ActionSummary times="1" last="1611279261743" />
+      </entry>
+      <entry key="CloseProject">
+        <ActionSummary times="4" last="1611284746373" />
+      </entry>
+      <entry key="EditorChooseLookupItem">
+        <ActionSummary times="1" last="1611279297575" />
+      </entry>
+      <entry key="EditorDown">
+        <ActionSummary times="1" last="1611279286031" />
+      </entry>
+      <entry key="EditorEnter">
+        <ActionSummary times="1" last="1611279243376" />
+      </entry>
+      <entry key="EditorLeft">
+        <ActionSummary times="1" last="1611279285038" />
+      </entry>
+      <entry key="EditorPaste">
+        <ActionSummary times="5" last="1611283165405" />
+      </entry>
+      <entry key="FileChooser.Refresh">
+        <ActionSummary times="2" last="1611278832154" />
+      </entry>
+      <entry key="Git.Add">
+        <ActionSummary times="1" last="1611279255468" />
+      </entry>
+      <entry key="Git.Commit.And.Push.Executor">
+        <ActionSummary times="1" last="1611279300516" />
+      </entry>
+      <entry key="Git.Pull">
+        <ActionSummary times="1" last="1611279571591" />
+      </entry>
+      <entry key="SaveAll">
+        <ActionSummary times="1" last="1611279249075" />
+      </entry>
+      <entry key="Vcs.VcsClone">
+        <ActionSummary times="2" last="1611283164566" />
+      </entry>
+      <entry key="WelcomeScreen.OpenProject">
+        <ActionSummary times="3" last="1611287404069" />
+      </entry>
+      <entry key="com.intellij.ide.ReopenProjectAction">
+        <ActionSummary times="1" last="1611279626695" />
+      </entry>
+    </data>
+  </component>
+</application>

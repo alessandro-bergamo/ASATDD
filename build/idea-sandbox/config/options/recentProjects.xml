@@ -1,0 +1,64 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/testrepositoryforsatd">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1nP5Nmko4AA76Plji713l8nyspT">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.7319.50" />
+              <option name="buildTimestamp" value="1600122075839" />
+              <frame x="260" y="20" width="1400" height="1000" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1611281782235" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/freeCodeCamp">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1nPBaOYiAkWsxRPmb6fJUdPs2yd">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.7319.50" />
+              <option name="buildTimestamp" value="1600122117358" />
+              <frame x="260" y="20" width="1400" height="1000" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1611283024494" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/deno">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1nPF6P2MYgImTL5OPF7TiPuQUes">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.7319.50" />
+              <option name="buildTimestamp" value="1600122117358" />
+              <frame x="260" y="20" width="1400" height="1000" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1611283642215" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/java-design-patterns">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="1nPKf3BJjkdJx6TcegldGSLussR">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.7319.50" />
+              <option name="buildTimestamp" value="1600122060455" />
+              <frame x="260" y="20" width="1400" height="1000" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1611287772121" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/IdeaProjects/java-design-patterns" />
+        <option value="$USER_HOME$/IdeaProjects/deno" />
+        <option value="$USER_HOME$/IdeaProjects/freeCodeCamp" />
+        <option value="$USER_HOME$/IdeaProjects/testrepositoryforsatd" />
+      </list>
+    </option>
+  </component>
+</application>

@@ -1,0 +1,2008 @@
+{
+  "appInfo" : {
+    "build" : "202.7319.50",
+    "buildDate" : "Tue, 15 Sep 2020 00:21:45 +0200",
+    "productCode" : "IC",
+    "generated" : "Fri, 22 Jan 2021 04:33:23 +0100",
+    "os" : "Windows 10 10.0",
+    "runtime" : "JetBrains s.r.o. 11.0.8 11.0.8+10-b944.31"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "java-design-patterns",
+    "numberOfFileProviders" : 119,
+    "totalNumberOfFiles" : 1137,
+    "times" : {
+      "indexingTime" : "2 s 866 ms",
+      "scanFilesTime" : "204 ms",
+      "pushPropertiesTime" : "209 ms",
+      "indexExtensionsTime" : "< 1 ms",
+      "pushPropertiesStart" : "Fri, 22 Jan 2021 04:33:20 +0100",
+      "pushPropertiesEnd" : "Fri, 22 Jan 2021 04:33:20 +0100",
+      "scanFilesStart" : "Fri, 22 Jan 2021 04:33:20 +0100",
+      "scanFilesEnd" : "Fri, 22 Jan 2021 04:33:21 +0100",
+      "indexExtensionsStart" : "Fri, 22 Jan 2021 04:33:20 +0100",
+      "indexExtensionsEnd" : "Fri, 22 Jan 2021 04:33:20 +0100",
+      "indexingStart" : "Fri, 22 Jan 2021 04:33:20 +0100",
+      "indexingEnd" : "Fri, 22 Jan 2021 04:33:23 +0100"
+    },
+    "numberOfIndexingThreads" : 3,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "JAVA",
+      "partOfTotalIndexingTime" : "100,0%",
+      "partOfTotalContentLoadingTime" : "100,0%",
+      "totalNumberOfFiles" : 1137,
+      "totalFilesSize" : "2,79 MB",
+      "indexingSpeed" : "1,09 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'reactor'",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : "55,67 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "26,0%"
+      }, {
+        "providerName" : "Module 'partial-response'",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "16,84 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "4,0%"
+      }, {
+        "providerName" : "Module 'hexagonal'",
+        "numberOfFiles" : 42,
+        "totalFilesSize" : "120,76 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "3,2%"
+      }, {
+        "providerName" : "Module 'page-object'",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "23,84 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2,6%"
+      }, {
+        "providerName" : "Module 'commander'",
+        "numberOfFiles" : 28,
+        "totalFilesSize" : "107,71 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2,5%"
+      }, {
+        "providerName" : "Module 'observer'",
+        "numberOfFiles" : 22,
+        "totalFilesSize" : "45,85 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2,4%"
+      }, {
+        "providerName" : "Module 'flux'",
+        "numberOfFiles" : 22,
+        "totalFilesSize" : "44,12 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2,0%"
+      }, {
+        "providerName" : "Module 'naked-objects-dom'",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "17,86 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1,9%"
+      }, {
+        "providerName" : "Module 'poison-pill'",
+        "numberOfFiles" : 14,
+        "totalFilesSize" : "30,86 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1,8%"
+      }, {
+        "providerName" : "Module 'saga'",
+        "numberOfFiles" : 25,
+        "totalFilesSize" : "58,54 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1,8%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : "100,0%",
+      "totalNumberOfFiles" : 1137,
+      "totalFilesSize" : "2,79 MB",
+      "indexingSpeed" : "1,09 MB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Module 'reactor'",
+      "totalNumberOfFiles" : 12,
+      "totalIndexingTime" : "307 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : "55,67 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'leader-election'",
+      "totalNumberOfFiles" : 19,
+      "totalIndexingTime" : "126 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 19,
+        "totalFilesSize" : "61,9 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'partial-response'",
+      "totalNumberOfFiles" : 7,
+      "totalIndexingTime" : "96 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "16,84 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'reader-writer-lock'",
+      "totalNumberOfFiles" : 9,
+      "totalIndexingTime" : "68 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : "30,32 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'commander'",
+      "totalNumberOfFiles" : 28,
+      "totalIndexingTime" : "59 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 28,
+        "totalFilesSize" : "107,71 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'observer'",
+      "totalNumberOfFiles" : 22,
+      "totalIndexingTime" : "58 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 22,
+        "totalFilesSize" : "45,85 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'separated-interface'",
+      "totalNumberOfFiles" : 9,
+      "totalIndexingTime" : "58 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : "15,71 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'hexagonal'",
+      "totalNumberOfFiles" : 42,
+      "totalIndexingTime" : "54 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 42,
+        "totalFilesSize" : "120,76 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'naked-objects-dom'",
+      "totalNumberOfFiles" : 6,
+      "totalIndexingTime" : "49 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "17,86 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'layers'",
+      "totalNumberOfFiles" : 20,
+      "totalIndexingTime" : "47 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 20,
+        "totalFilesSize" : "54,85 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'bytecode'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "47 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "24,27 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'saga'",
+      "totalNumberOfFiles" : 25,
+      "totalIndexingTime" : "44 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 25,
+        "totalFilesSize" : "58,54 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'flux'",
+      "totalNumberOfFiles" : 22,
+      "totalIndexingTime" : "44 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 22,
+        "totalFilesSize" : "44,12 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'poison-pill'",
+      "totalNumberOfFiles" : 14,
+      "totalIndexingTime" : "43 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 14,
+        "totalFilesSize" : "30,86 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'price-microservice'",
+      "totalNumberOfFiles" : 3,
+      "totalIndexingTime" : "40 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "5,25 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'interpreter'",
+      "totalNumberOfFiles" : 12,
+      "totalIndexingTime" : "40 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : "26,12 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'priority-queue'",
+      "totalNumberOfFiles" : 7,
+      "totalIndexingTime" : "38 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "17,29 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'semaphore'",
+      "totalNumberOfFiles" : 10,
+      "totalIndexingTime" : "36 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : "21,6 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'lazy-loading'",
+      "totalNumberOfFiles" : 10,
+      "totalIndexingTime" : "36 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : "19,67 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'intercepting-filter'",
+      "totalNumberOfFiles" : 17,
+      "totalIndexingTime" : "34 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 17,
+        "totalFilesSize" : "40,64 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'caching'",
+      "totalNumberOfFiles" : 10,
+      "totalIndexingTime" : "34 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : "37,16 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'master-worker-pattern'",
+      "totalNumberOfFiles" : 16,
+      "totalIndexingTime" : "33 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 16,
+        "totalFilesSize" : "38,96 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'page-object'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "31 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "23,84 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'circuit-breaker'",
+      "totalNumberOfFiles" : 13,
+      "totalIndexingTime" : "28 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 13,
+        "totalFilesSize" : "38,97 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'naked-objects-fixture'",
+      "totalNumberOfFiles" : 4,
+      "totalIndexingTime" : "26 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "9,5 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'mediator'",
+      "totalNumberOfFiles" : 13,
+      "totalIndexingTime" : "25 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 13,
+        "totalFilesSize" : "25,51 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'naked-objects-integtests'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "25 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "19,72 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'pipeline'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "23 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "16,55 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'data-bus'",
+      "totalNumberOfFiles" : 13,
+      "totalIndexingTime" : "22 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 13,
+        "totalFilesSize" : "32,23 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'mutex'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "22 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "14,75 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'event-driven-architecture'",
+      "totalNumberOfFiles" : 13,
+      "totalIndexingTime" : "21 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 13,
+        "totalFilesSize" : "26,16 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'prototype'",
+      "totalNumberOfFiles" : 15,
+      "totalIndexingTime" : "20 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 15,
+        "totalFilesSize" : "28,82 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'extension-objects'",
+      "totalNumberOfFiles" : 20,
+      "totalIndexingTime" : "20 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 20,
+        "totalFilesSize" : "36,18 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'repository'",
+      "totalNumberOfFiles" : 9,
+      "totalIndexingTime" : "19 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : "29,27 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'fluentinterface'",
+      "totalNumberOfFiles" : 9,
+      "totalIndexingTime" : "19 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : "37,91 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'data-locality'",
+      "totalNumberOfFiles" : 10,
+      "totalIndexingTime" : "18 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : "20,68 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'iterator'",
+      "totalNumberOfFiles" : 11,
+      "totalIndexingTime" : "18 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 11,
+        "totalFilesSize" : "29,84 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'mute-idiom'",
+      "totalNumberOfFiles" : 6,
+      "totalIndexingTime" : "17 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "13,6 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'abstract-factory'",
+      "totalNumberOfFiles" : 16,
+      "totalIndexingTime" : "16 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 16,
+        "totalFilesSize" : "28,95 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'dao'",
+      "totalNumberOfFiles" : 11,
+      "totalIndexingTime" : "15 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 11,
+        "totalFilesSize" : "42,87 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'retry'",
+      "totalNumberOfFiles" : 11,
+      "totalIndexingTime" : "15 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 11,
+        "totalFilesSize" : "31,32 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'role-object'",
+      "totalNumberOfFiles" : 12,
+      "totalIndexingTime" : "14 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : "25,52 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'cqrs'",
+      "totalNumberOfFiles" : 12,
+      "totalIndexingTime" : "14 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : "34,94 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'model-view-controller'",
+      "totalNumberOfFiles" : 11,
+      "totalIndexingTime" : "14 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 11,
+        "totalFilesSize" : "25,02 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'null-object'",
+      "totalNumberOfFiles" : 7,
+      "totalIndexingTime" : "14 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "16,79 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'model-view-presenter'",
+      "totalNumberOfFiles" : 9,
+      "totalIndexingTime" : "13 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : "27,68 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'business-delegate'",
+      "totalNumberOfFiles" : 10,
+      "totalIndexingTime" : "13 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : "19,23 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'acyclic-visitor'",
+      "totalNumberOfFiles" : 15,
+      "totalIndexingTime" : "13 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 15,
+        "totalFilesSize" : "27,02 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'builder'",
+      "totalNumberOfFiles" : 9,
+      "totalIndexingTime" : "13 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : "19,39 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'chain'",
+      "totalNumberOfFiles" : 10,
+      "totalIndexingTime" : "13 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : "19 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'game-loop'",
+      "totalNumberOfFiles" : 14,
+      "totalIndexingTime" : "12 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 14,
+        "totalFilesSize" : "27,89 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'registry'",
+      "totalNumberOfFiles" : 4,
+      "totalIndexingTime" : "12 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "3,21 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'object-pool'",
+      "totalNumberOfFiles" : 6,
+      "totalIndexingTime" : "11 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "15,05 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'composite'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "11 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "16,22 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'naked-objects-webapp'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "11 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "6,04 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'async-method-invocation'",
+      "totalNumberOfFiles" : 7,
+      "totalIndexingTime" : "11 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "31,24 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'proxy'",
+      "totalNumberOfFiles" : 10,
+      "totalIndexingTime" : "11 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : "18,66 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'feature-toggle'",
+      "totalNumberOfFiles" : 9,
+      "totalIndexingTime" : "11 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : "28,38 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'event-aggregator'",
+      "totalNumberOfFiles" : 19,
+      "totalIndexingTime" : "11 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 19,
+        "totalFilesSize" : "38,63 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'leader-followers'",
+      "totalNumberOfFiles" : 10,
+      "totalIndexingTime" : "10 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : "22,76 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'double-dispatch'",
+      "totalNumberOfFiles" : 15,
+      "totalIndexingTime" : "10 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 15,
+        "totalFilesSize" : "38,9 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'event-asynchronous'",
+      "totalNumberOfFiles" : 11,
+      "totalIndexingTime" : "10 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 11,
+        "totalFilesSize" : "35,59 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'half-sync-half-async'",
+      "totalNumberOfFiles" : 5,
+      "totalIndexingTime" : "10 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "18,9 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'aggregator-service'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "10 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "15,76 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'bridge'",
+      "totalNumberOfFiles" : 11,
+      "totalIndexingTime" : "10 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 11,
+        "totalFilesSize" : "19,96 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'object-mother'",
+      "totalNumberOfFiles" : 5,
+      "totalIndexingTime" : "9 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "12,11 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'front-controller'",
+      "totalNumberOfFiles" : 17,
+      "totalIndexingTime" : "9 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 17,
+        "totalFilesSize" : "30,09 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'producer-consumer'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "9 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "15,63 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'converter'",
+      "totalNumberOfFiles" : 7,
+      "totalIndexingTime" : "9 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "19,03 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'queue-load-leveling'",
+      "totalNumberOfFiles" : 10,
+      "totalIndexingTime" : "8 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : "22,77 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'filterer'",
+      "totalNumberOfFiles" : 14,
+      "totalIndexingTime" : "8 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 14,
+        "totalFilesSize" : "31,65 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'private-class-data'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "8 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "17,21 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'ambassador'",
+      "totalNumberOfFiles" : 11,
+      "totalIndexingTime" : "8 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 11,
+        "totalFilesSize" : "21,61 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'promise'",
+      "totalNumberOfFiles" : 6,
+      "totalIndexingTime" : "8 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "30,1 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'callback'",
+      "totalNumberOfFiles" : 7,
+      "totalIndexingTime" : "8 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "11,24 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'api-gateway-service'",
+      "totalNumberOfFiles" : 9,
+      "totalIndexingTime" : "8 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : "20,26 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'marker'",
+      "totalNumberOfFiles" : 7,
+      "totalIndexingTime" : "7 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "11,68 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'abstract-document'",
+      "totalNumberOfFiles" : 13,
+      "totalIndexingTime" : "7 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 13,
+        "totalFilesSize" : "25,8 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'collection-pipeline'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "7 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "23,43 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'inventory-microservice'",
+      "totalNumberOfFiles" : 3,
+      "totalIndexingTime" : "7 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "5,05 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'multiton'",
+      "totalNumberOfFiles" : 7,
+      "totalIndexingTime" : "7 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "13,82 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'event-sourcing'",
+      "totalNumberOfFiles" : 10,
+      "totalIndexingTime" : "6 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : "34,8 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'combinator'",
+      "totalNumberOfFiles" : 6,
+      "totalIndexingTime" : "6 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "16,14 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'command'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "6 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "18,18 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'property'",
+      "totalNumberOfFiles" : 6,
+      "totalIndexingTime" : "6 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "15,49 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'dependency-injection'",
+      "totalNumberOfFiles" : 17,
+      "totalIndexingTime" : "6 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 17,
+        "totalFilesSize" : "33,26 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'flyweight'",
+      "totalNumberOfFiles" : 12,
+      "totalIndexingTime" : "6 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : "21,82 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'monad'",
+      "totalNumberOfFiles" : 6,
+      "totalIndexingTime" : "6 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "14,36 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'guarded-suspension'",
+      "totalNumberOfFiles" : 3,
+      "totalIndexingTime" : "6 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "7,56 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'servant'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "5 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "2,79 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'monostate'",
+      "totalNumberOfFiles" : 6,
+      "totalIndexingTime" : "5 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "12,63 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'event-queue'",
+      "totalNumberOfFiles" : 4,
+      "totalIndexingTime" : "5 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "13,87 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'balking'",
+      "totalNumberOfFiles" : 6,
+      "totalIndexingTime" : "5 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "13,12 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'memento'",
+      "totalNumberOfFiles" : 6,
+      "totalIndexingTime" : "5 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "14,36 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'data-mapper'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "5 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "19,75 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'adapter'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "5 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "14,6 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'sample-application'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "5 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "4,13 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'factory-method'",
+      "totalNumberOfFiles" : 10,
+      "totalIndexingTime" : "5 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : "19,95 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'module'",
+      "totalNumberOfFiles" : 5,
+      "totalIndexingTime" : "4 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "17,98 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'factory'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "4 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "12,15 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'factory-kit'",
+      "totalNumberOfFiles" : 11,
+      "totalIndexingTime" : "4 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 11,
+        "totalFilesSize" : "19,02 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'resource-acquisition-is-initialization'",
+      "totalNumberOfFiles" : 5,
+      "totalIndexingTime" : "4 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "10,48 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'decorator'",
+      "totalNumberOfFiles" : 7,
+      "totalIndexingTime" : "4 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "14,46 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'facade'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "4 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "18,59 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'information-microservice'",
+      "totalNumberOfFiles" : 3,
+      "totalIndexingTime" : "4 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "5,07 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'delegation'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "3 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "17,67 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'double-buffer'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "3 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "18,55 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'eip-aggregator'",
+      "totalNumberOfFiles" : 6,
+      "totalIndexingTime" : "3 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "14,73 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'data-transfer-object-enum-impl'",
+      "totalNumberOfFiles" : 5,
+      "totalIndexingTime" : "3 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "13,81 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'arrange-act-assert'",
+      "totalNumberOfFiles" : 3,
+      "totalIndexingTime" : "3 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "7,59 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'double-checked-locking'",
+      "totalNumberOfFiles" : 5,
+      "totalIndexingTime" : "3 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "12,96 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'image-microservice'",
+      "totalNumberOfFiles" : 3,
+      "totalIndexingTime" : "3 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "5,3 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'data-transfer-object'",
+      "totalNumberOfFiles" : 5,
+      "totalIndexingTime" : "2 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "12,19 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'dirty-flag'",
+      "totalNumberOfFiles" : 5,
+      "totalIndexingTime" : "2 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "11,8 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'execute-around'",
+      "totalNumberOfFiles" : 5,
+      "totalIndexingTime" : "2 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "10,21 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'eip-wire-tap'",
+      "totalNumberOfFiles" : 4,
+      "totalIndexingTime" : "2 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "10,27 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'eip-splitter'",
+      "totalNumberOfFiles" : 4,
+      "totalIndexingTime" : "1 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "9,94 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'eip-publish-subscribe'",
+      "totalNumberOfFiles" : 2,
+      "totalIndexingTime" : "1 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "4,95 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'eip-message-channel'",
+      "totalNumberOfFiles" : 2,
+      "totalIndexingTime" : "1 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "5,09 kB",
+        "partOfTotalIndexingTime" : "100,0%",
+        "partOfTotalContentLoadingTime" : "100,0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "100,0%"
+      } ],
+      "fastIndexers" : [ ]
+    } ]
+  }
+}

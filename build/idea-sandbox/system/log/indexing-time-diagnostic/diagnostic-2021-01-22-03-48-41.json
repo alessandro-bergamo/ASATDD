@@ -1,0 +1,600 @@
+{
+  "appInfo" : {
+    "build" : "202.7319.50",
+    "buildDate" : "Tue, 15 Sep 2020 00:21:57 +0200",
+    "productCode" : "IC",
+    "generated" : "Fri, 22 Jan 2021 03:48:41 +0100",
+    "os" : "Windows 10 10.0",
+    "runtime" : "JetBrains s.r.o. 11.0.8 11.0.8+10-b944.31"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "deno",
+    "numberOfFileProviders" : 1,
+    "totalNumberOfFiles" : 69483,
+    "times" : {
+      "indexingTime" : "1 m 19 s 144 ms",
+      "scanFilesTime" : "4 s 177 ms",
+      "pushPropertiesTime" : "7 s 83 ms",
+      "indexExtensionsTime" : "< 1 ms",
+      "pushPropertiesStart" : "Fri, 22 Jan 2021 03:47:22 +0100",
+      "pushPropertiesEnd" : "Fri, 22 Jan 2021 03:47:29 +0100",
+      "scanFilesStart" : "Fri, 22 Jan 2021 03:47:29 +0100",
+      "scanFilesEnd" : "Fri, 22 Jan 2021 03:47:34 +0100",
+      "indexExtensionsStart" : "Fri, 22 Jan 2021 03:47:29 +0100",
+      "indexExtensionsEnd" : "Fri, 22 Jan 2021 03:47:29 +0100",
+      "indexingStart" : "Fri, 22 Jan 2021 03:47:22 +0100",
+      "indexingEnd" : "Fri, 22 Jan 2021 03:48:41 +0100"
+    },
+    "numberOfIndexingThreads" : 3,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "HTML",
+      "partOfTotalIndexingTime" : "69,4%",
+      "partOfTotalContentLoadingTime" : "64,3%",
+      "totalNumberOfFiles" : 38256,
+      "totalFilesSize" : "86,43 MB",
+      "indexingSpeed" : "1,12 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 38256,
+        "totalFilesSize" : "86,43 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "PLAIN_TEXT",
+      "partOfTotalIndexingTime" : "7,8%",
+      "partOfTotalContentLoadingTime" : "18,8%",
+      "totalNumberOfFiles" : 19322,
+      "totalFilesSize" : "31,11 MB",
+      "indexingSpeed" : "3,6 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 19322,
+        "totalFilesSize" : "31,11 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "JavaScript",
+      "partOfTotalIndexingTime" : "5,6%",
+      "partOfTotalContentLoadingTime" : "4,8%",
+      "totalNumberOfFiles" : 4147,
+      "totalFilesSize" : "15,16 MB",
+      "indexingSpeed" : "2,45 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 4147,
+        "totalFilesSize" : "15,16 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "Markdown",
+      "partOfTotalIndexingTime" : "4,8%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 352,
+      "totalFilesSize" : "1,01 MB",
+      "indexingSpeed" : "190,22 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 352,
+        "totalFilesSize" : "1,01 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "textmate",
+      "partOfTotalIndexingTime" : "4,7%",
+      "partOfTotalContentLoadingTime" : "5,1%",
+      "totalNumberOfFiles" : 2750,
+      "totalFilesSize" : "15,32 MB",
+      "indexingSpeed" : "2,92 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 2750,
+        "totalFilesSize" : "15,32 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "Android RenderScript",
+      "partOfTotalIndexingTime" : "1,7%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 125,
+      "totalFilesSize" : "1,65 MB",
+      "indexingSpeed" : "850,37 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 125,
+        "totalFilesSize" : "1,65 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "YAML",
+      "partOfTotalIndexingTime" : "1,4%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 444,
+      "totalFilesSize" : "931,53 kB",
+      "indexingSpeed" : "604,03 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 444,
+        "totalFilesSize" : "931,53 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "SVG",
+      "partOfTotalIndexingTime" : "1,2%",
+      "partOfTotalContentLoadingTime" : "1,6%",
+      "totalNumberOfFiles" : 1323,
+      "totalFilesSize" : "5,95 MB",
+      "indexingSpeed" : "4,4 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 1323,
+        "totalFilesSize" : "5,95 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "XML",
+      "partOfTotalIndexingTime" : "1,2%",
+      "partOfTotalContentLoadingTime" : "1,0%",
+      "totalNumberOfFiles" : 618,
+      "totalFilesSize" : "2,86 MB",
+      "indexingSpeed" : "2,14 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 618,
+        "totalFilesSize" : "2,86 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "XHTML",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 901,
+      "totalFilesSize" : "1,37 MB",
+      "indexingSpeed" : "1,92 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 901,
+        "totalFilesSize" : "1,37 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "JSON",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 527,
+      "totalFilesSize" : "2,26 MB",
+      "indexingSpeed" : "3,19 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 527,
+        "totalFilesSize" : "2,26 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "CSS",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 454,
+      "totalFilesSize" : "983,16 kB",
+      "indexingSpeed" : "2,7 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 454,
+        "totalFilesSize" : "983,16 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "EditorConfig",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 4,
+      "totalFilesSize" : "722 B",
+      "indexingSpeed" : "2,33 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "722 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "IDL",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 182,
+      "totalFilesSize" : "578,82 kB",
+      "indexingSpeed" : "2,85 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 182,
+        "totalFilesSize" : "578,82 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "Shell Script",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 32,
+      "totalFilesSize" : "66,28 kB",
+      "indexingSpeed" : "568,35 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 32,
+        "totalFilesSize" : "66,28 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "DTD",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 8,
+      "totalFilesSize" : "192,61 kB",
+      "indexingSpeed" : "4,17 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "192,61 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "C++",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 3,
+      "totalFilesSize" : "29,32 kB",
+      "indexingSpeed" : "638,43 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "29,32 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "Perl",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 3,
+      "totalFilesSize" : "36,27 kB",
+      "indexingSpeed" : "3,54 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "36,27 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "HgIgnore file",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 3,
+      "totalFilesSize" : "478 B",
+      "indexingSpeed" : "67,11 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "478 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "C#",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "4,58 kB",
+      "indexingSpeed" : "670 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "4,58 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "GitIgnore file",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 26,
+      "totalFilesSize" : "7,11 kB",
+      "indexingSpeed" : "1,29 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 26,
+        "totalFilesSize" : "7,11 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "IgnoreLang file",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "47,95 kB",
+      "indexingSpeed" : "10,58 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'deno'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "47,95 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "TodoIndex",
+      "partOfTotalIndexingTime" : "30,1%",
+      "totalNumberOfFiles" : 69481,
+      "totalFilesSize" : "166 MB",
+      "indexingSpeed" : "4,96 MB/s"
+    }, {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : "28,1%",
+      "totalNumberOfFiles" : 39226,
+      "totalFilesSize" : "90,31 MB",
+      "indexingSpeed" : "2,89 MB/s"
+    }, {
+      "indexId" : "html5.custom.attributes.index",
+      "partOfTotalIndexingTime" : "20,9%",
+      "totalNumberOfFiles" : 39156,
+      "totalFilesSize" : "87,8 MB",
+      "indexingSpeed" : "3,77 MB/s"
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : "10,5%",
+      "totalNumberOfFiles" : 69483,
+      "totalFilesSize" : "166 MB",
+      "indexingSpeed" : "14,21 MB/s"
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : "8,8%",
+      "totalNumberOfFiles" : 69481,
+      "totalFilesSize" : "166 MB",
+      "indexingSpeed" : "16,92 MB/s"
+    }, {
+      "indexId" : "yaml.keys.name",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 443,
+      "totalFilesSize" : "931,45 kB",
+      "indexingSpeed" : "1,08 MB/s"
+    }, {
+      "indexId" : "editorconfig.index.name",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 4,
+      "totalFilesSize" : "722 B",
+      "indexingSpeed" : "2,36 kB/s"
+    }, {
+      "indexId" : "fileIncludes",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 618,
+      "totalFilesSize" : "2,86 MB",
+      "indexingSpeed" : "14,46 MB/s"
+    }, {
+      "indexId" : "DomFileIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 618,
+      "totalFilesSize" : "2,86 MB",
+      "indexingSpeed" : "19,49 MB/s"
+    }, {
+      "indexId" : "json.file.root.values",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 527,
+      "totalFilesSize" : "2,26 MB",
+      "indexingSpeed" : "29,97 MB/s"
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 4147,
+      "totalFilesSize" : "15,16 MB",
+      "indexingSpeed" : "261,57 MB/s"
+    }, {
+      "indexId" : "ant-imports",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 618,
+      "totalFilesSize" : "2,86 MB",
+      "indexingSpeed" : "52,04 MB/s"
+    }, {
+      "indexId" : "RelaxSymbolIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 618,
+      "totalFilesSize" : "2,86 MB",
+      "indexingSpeed" : "67,44 MB/s"
+    }, {
+      "indexId" : "xmlProperties",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 615,
+      "totalFilesSize" : "2,86 MB",
+      "indexingSpeed" : "103,37 MB/s"
+    }, {
+      "indexId" : "XsltSymbolIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 618,
+      "totalFilesSize" : "2,86 MB",
+      "indexingSpeed" : "107,68 MB/s"
+    }, {
+      "indexId" : "FrameworkDetectionIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 618,
+      "totalFilesSize" : "2,86 MB",
+      "indexingSpeed" : "188,3 MB/s"
+    }, {
+      "indexId" : "IdeaPluginRegistrationIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 618,
+      "totalFilesSize" : "2,86 MB",
+      "indexingSpeed" : "431,47 MB/s"
+    }, {
+      "indexId" : "devkit.ExtensionPointIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 618,
+      "totalFilesSize" : "2,86 MB",
+      "indexingSpeed" : "595,03 MB/s"
+    }, {
+      "indexId" : "PluginIdModuleIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 618,
+      "totalFilesSize" : "2,86 MB",
+      "indexingSpeed" : "6,23 GB/s"
+    }, {
+      "indexId" : "PluginIdDependenciesIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 618,
+      "totalFilesSize" : "2,86 MB",
+      "indexingSpeed" : "8,73 GB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Module 'deno'",
+      "totalNumberOfFiles" : 69483,
+      "totalIndexingTime" : "1 m 7 s 849 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "HTML",
+        "numberOfFiles" : 38256,
+        "totalFilesSize" : "86,43 MB",
+        "partOfTotalIndexingTime" : "69,4%",
+        "partOfTotalContentLoadingTime" : "64,3%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 19322,
+        "totalFilesSize" : "31,11 MB",
+        "partOfTotalIndexingTime" : "7,8%",
+        "partOfTotalContentLoadingTime" : "18,8%"
+      }, {
+        "fileType" : "JavaScript",
+        "numberOfFiles" : 4147,
+        "totalFilesSize" : "15,16 MB",
+        "partOfTotalIndexingTime" : "5,6%",
+        "partOfTotalContentLoadingTime" : "4,8%"
+      }, {
+        "fileType" : "Markdown",
+        "numberOfFiles" : 352,
+        "totalFilesSize" : "1,01 MB",
+        "partOfTotalIndexingTime" : "4,8%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "textmate",
+        "numberOfFiles" : 2750,
+        "totalFilesSize" : "15,32 MB",
+        "partOfTotalIndexingTime" : "4,7%",
+        "partOfTotalContentLoadingTime" : "5,1%"
+      }, {
+        "fileType" : "Android RenderScript",
+        "numberOfFiles" : 125,
+        "totalFilesSize" : "1,65 MB",
+        "partOfTotalIndexingTime" : "1,7%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "YAML",
+        "numberOfFiles" : 444,
+        "totalFilesSize" : "931,53 kB",
+        "partOfTotalIndexingTime" : "1,4%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SVG",
+        "numberOfFiles" : 1323,
+        "totalFilesSize" : "5,95 MB",
+        "partOfTotalIndexingTime" : "1,2%",
+        "partOfTotalContentLoadingTime" : "1,6%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 618,
+        "totalFilesSize" : "2,86 MB",
+        "partOfTotalIndexingTime" : "1,2%",
+        "partOfTotalContentLoadingTime" : "1,0%"
+      }, {
+        "fileType" : "XHTML",
+        "numberOfFiles" : 901,
+        "totalFilesSize" : "1,37 MB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "JSON",
+        "numberOfFiles" : 527,
+        "totalFilesSize" : "2,26 MB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "CSS",
+        "numberOfFiles" : 454,
+        "totalFilesSize" : "983,16 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "EditorConfig",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "722 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "IDL",
+        "numberOfFiles" : 182,
+        "totalFilesSize" : "578,82 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Shell Script",
+        "numberOfFiles" : 32,
+        "totalFilesSize" : "66,28 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "DTD",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "192,61 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "C++",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "29,32 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Perl",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "36,27 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "HgIgnore file",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "478 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "C#",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "4,58 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "GitIgnore file",
+        "numberOfFiles" : 26,
+        "totalFilesSize" : "7,11 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "IgnoreLang file",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "47,95 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "TodoIndex",
+        "partOfTotalIndexingTime" : "30,1%"
+      }, {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "28,1%"
+      }, {
+        "indexId" : "html5.custom.attributes.index",
+        "partOfTotalIndexingTime" : "20,9%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "10,5%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "8,8%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "FrameworkDetectionIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "RelaxSymbolIndex", "XsltSymbolIndex", "ant-imports", "devkit.ExtensionPointIndex", "editorconfig.index.name", "fileIncludes", "json.file.root.values", "org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex", "xmlProperties", "yaml.keys.name" ]
+    } ]
+  }
+}

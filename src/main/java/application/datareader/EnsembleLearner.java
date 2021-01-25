@@ -1,11 +1,13 @@
 package application.datareader;
 
+import com.intellij.ide.ui.EditorOptionsTopHitProvider;
 import core.entities.Document;
 import core.process.DataReader;
 import weka.attributeSelection.InfoGainAttributeEval;
 import weka.attributeSelection.Ranker;
 import weka.classifiers.Classifier;
 import weka.classifiers.bayes.NaiveBayesMultinomial;
+import weka.core.DenseInstance;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.SerializationHelper;
@@ -29,6 +31,7 @@ public class EnsembleLearner
     public EnsembleLearner()
     {
         classifiers = new ArrayList<>();
+        index_identified = new ArrayList<>();
 
         try {
             classifiers = getClassifiers();
@@ -38,18 +41,44 @@ public class EnsembleLearner
     }
 
 
-    public double classifyCommit(Instance instance) throws Exception
+    public List<Integer> classifyCommit(Instances instances) throws Exception
     {
-        vote = 0;
-
-        for(Classifier classifier : classifiers)
+        /*for(Classifier classifier : classifiers)
         {
-            vote += classifier.classifyInstance(instance);
+            for(int I=0; I < instances.size(); I++)
+            {
+                Instance instance = instances.get(I);
+                if(classifier.classifyInstance(instance) > vote)
+                    vote = classifier.classifyInstance(instance);
+            }
+        }*/
+
+        Classifier classifier = getClassifier();
+
+        for(int I=0; I<instances.numInstances(); I++)
+        {
+            Instance instance = instances.get(I);
+
+            System.out.println("\nINSTANCE: "+instance);
+
+            double actualClassValue = instances.instance(I).classValue();
+            System.out.println("ACTUAL CLASS VALUE: "+instances.classAttribute().value((int) actualClassValue));
+
+            double result = classifier.classifyInstance(instance);
+            System.out.println("PREDICTED CLASS VALUE: "+instances.classAttribute().value((int) result)+" --- "+result);
+
+            index_identified.add(I);
         }
 
-        System.out.println("CLASSIFYCOMMIT RIGA 50 VOTO: "+vote);
+        return index_identified;
+    }
 
-        return vote;
+
+    public Classifier getClassifier() throws Exception
+    {
+        Classifier classifier = (Classifier) SerializationHelper.read(System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "models" + File.separator + "jEdit-4.2.model");
+
+        return classifier;
     }
 
 
@@ -58,7 +87,7 @@ public class EnsembleLearner
         String path = System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "models";
         directory_classifiers = new File(path);
 
-        if(directory_classifiers.isDirectory())
+        if(directory_classifiers.isDirectory() && directory_classifiers.listFiles().length != 0 && directory_classifiers.listFiles().length == 8)
         {
             for(final File classifier_file : directory_classifiers.listFiles())
             {
@@ -122,7 +151,6 @@ public class EnsembleLearner
 
                 InfoGainAttributeEval ifg = new InfoGainAttributeEval();
                 attSelection.setEvaluator(ifg);
-
                 attSelection.setSearch(ranker);
                 attSelection.setInputFormat(trainSet);
 
@@ -148,6 +176,7 @@ public class EnsembleLearner
 
     private double vote;
     private List<Classifier> classifiers;
+    private List<Integer> index_identified;
     private Classifier classifier;
     private File directory_classifiers;
 

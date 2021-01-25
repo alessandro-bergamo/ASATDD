@@ -26,7 +26,7 @@ public class IdentifySATDInteractor
     public List<Commit> execute()
     {
         try {
-            ArrayList<Commit> commits = retrieveCommitsLog.retrieveCommitsLogs(repository_path);
+            List<Commit> commits = retrieveCommitsLog.retrieveCommitsLogs(repository_path);
             return SATDDetector.detectSATD(commits);
         } catch(Exception e) {
             e.printStackTrace();

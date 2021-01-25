@@ -2,21 +2,24 @@ package core.util;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class FileUtil {
+public class FileUtil
+{
 	
-	public static List<String> readLinesFromFile(String filePath){
-		
+	public static List<String> readLinesFromFile(String filePath)
+	{
 		BufferedReader reader = null;
-		List<String> lines = new ArrayList<String>();
+		List<String> lines = new ArrayList<>();
+
 		try {
 			reader = new BufferedReader(new FileReader(new File(filePath)));
 			
 			String line = null;
-			while ((line = reader.readLine()) != null) {
+
+			while ((line = reader.readLine()) != null)
 				lines.add(line);
-			}
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -33,18 +36,20 @@ public class FileUtil {
 		}
 		
 		return lines;
-
 	}
-	
-	public static void writeLinesToFile(List<String> lines,String filePath){
+
+
+	public static void writeLinesToFile(List<String> lines, String filePath)
+	{
 		BufferedWriter writer = null;
+
 		try {
 			writer = new BufferedWriter(new FileWriter(new File(filePath)));
-			for(String line:lines){
+			for(String line : lines)
+			{
 				writer.write(line);
 				writer.newLine();
 			}
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -56,6 +61,30 @@ public class FileUtil {
 				}
 			}
 		}
+	}
+
+
+	public static void removeBlankLines(String filePath)
+	{
+		List<String> lines = FileUtil.readLinesFromFile(filePath);
+
+		Iterator<String> iterator = lines.iterator();
+
+		while (iterator.hasNext()) {
+			String line = iterator.next();
+			if (line.trim().isEmpty())
+				iterator.remove();
+		}
+
+		FileUtil.writeLinesToFile(lines, filePath);
+	}
+
+
+	public static void compactMessage(String filePath)
+	{
+		List<String> lines = FileUtil.readLinesFromFile(filePath);
+
+
 	}
 
 }
