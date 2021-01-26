@@ -4,11 +4,13 @@ import core.entities.Commit;
 import core.entities.Document;
 import core.process.DataReader;
 import core.util.FileUtil;
-import org.apache.xmlbeans.impl.regex.Match;
+
 import weka.attributeSelection.InfoGainAttributeEval;
 import weka.attributeSelection.Ranker;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.bayes.NaiveBayesMultinomial;
+
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.SerializationHelper;
@@ -16,19 +18,18 @@ import weka.core.converters.ConverterUtils;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.core.stemmers.SnowballStemmer;
 import weka.core.stopwords.WordsFromFile;
+
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.AttributeSelection;
-
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
 import java.io.File;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class RealSATDDetector implements SATDDetector
 {
-
-    private int J = 0;
 
     public RealSATDDetector()
     {

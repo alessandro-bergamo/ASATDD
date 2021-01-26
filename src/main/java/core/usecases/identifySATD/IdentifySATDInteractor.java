@@ -1,14 +1,9 @@
 package core.usecases.identifySATD;
 
 import core.entities.Commit;
-import core.entities.detector.ImpossibleIdentification;
 import core.entities.detector.SATDDetector;
 import core.util.RetrieveCommitsLog;
-import org.eclipse.jgit.api.errors.GitAPIException;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class IdentifySATDInteractor

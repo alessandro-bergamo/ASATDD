@@ -1,13 +1,14 @@
 package application.datareader;
 
-import com.intellij.ide.ui.EditorOptionsTopHitProvider;
 import core.entities.Document;
 import core.process.DataReader;
+
 import weka.attributeSelection.InfoGainAttributeEval;
 import weka.attributeSelection.Ranker;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.bayes.NaiveBayesMultinomial;
-import weka.core.DenseInstance;
+
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.SerializationHelper;
@@ -15,11 +16,13 @@ import weka.core.converters.ArffSaver;
 import weka.core.converters.ConverterUtils;
 import weka.core.stemmers.SnowballStemmer;
 import weka.core.stopwords.WordsFromFile;
+
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.AttributeSelection;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
 import java.io.File;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -43,16 +46,6 @@ public class EnsembleLearner
 
     public List<Integer> classifyCommit(Instances instances) throws Exception
     {
-        /*for(Classifier classifier : classifiers)
-        {
-            for(int I=0; I < instances.size(); I++)
-            {
-                Instance instance = instances.get(I);
-                if(classifier.classifyInstance(instance) > vote)
-                    vote = classifier.classifyInstance(instance);
-            }
-        }*/
-
         Classifier classifier = getClassifier();
 
         for(int I=0; I<instances.numInstances(); I++)

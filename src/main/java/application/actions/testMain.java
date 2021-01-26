@@ -1,16 +1,10 @@
 package application.actions;
 
-import com.intellij.openapi.project.Project;
 import core.entities.Commit;
 import core.entities.detector.RealSATDDetector;
-import core.usecases.identifySATD.IdentifySATDInteractor;
 import core.util.RetrieveCommitsLog;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Objects;
 
 public class testMain
 {

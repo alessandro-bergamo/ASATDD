@@ -2,10 +2,10 @@ package core.util;
 
 import core.entities.Commit;
 import core.entities.detector.ImpossibleIdentification;
-import org.eclipse.jgit.api.Git; //inserire nel readme l'utlizzo di questa libreria
+
+import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.lib.*;
 import org.eclipse.jgit.revwalk.RevCommit;
-
 
 import java.io.File;
 import java.util.*;

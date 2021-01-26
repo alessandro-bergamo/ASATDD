@@ -4,7 +4,7 @@ import core.entities.Commit;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.util.ArrayList;
+
 import java.util.Date;
 import java.util.List;
 
