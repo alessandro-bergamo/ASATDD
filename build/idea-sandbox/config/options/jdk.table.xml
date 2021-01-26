@@ -50,5 +50,102 @@
       </roots>
       <additional />
     </jdk>
+    <jdk version="2">
+      <name value="11" />
+      <type value="JavaSDK" />
+      <version value="java version &quot;11.0.5&quot;" />
+      <homePath value="C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot" />
+      <roots>
+        <annotationsPath>
+          <root type="composite">
+            <root url="jar://$APPLICATION_HOME_DIR$/plugins/java/lib/jdkAnnotations.jar!/" type="simple" />
+          </root>
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.base" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.compiler" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.datatransfer" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.desktop" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.instrument" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.logging" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.management" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.management.rmi" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.naming" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.net.http" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.prefs" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.rmi" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.scripting" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.se" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.security.jgss" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.security.sasl" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.smartcardio" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.sql" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.sql.rowset" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.transaction.xa" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.xml" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/java.xml.crypto" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.accessibility" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.aot" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.attach" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.charsets" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.compiler" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.crypto.cryptoki" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.crypto.ec" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.crypto.mscapi" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.dynalink" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.editpad" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.hotspot.agent" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.httpserver" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.internal.ed" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.internal.jvmstat" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.internal.le" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.internal.opt" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.internal.vm.ci" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.internal.vm.compiler" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.internal.vm.compiler.management" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.jartool" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.javadoc" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.jcmd" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.jconsole" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.jdeps" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.jdi" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.jdwp.agent" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.jfr" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.jlink" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.jshell" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.jsobject" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.jstatd" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.localedata" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.management" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.management.agent" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.management.jfr" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.naming.dns" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.naming.rmi" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.net" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.pack" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.rmic" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.scripting.nashorn" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.scripting.nashorn.shell" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.sctp" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.security.auth" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.security.jgss" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.unsupported" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.unsupported.desktop" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.xml.dom" type="simple" />
+            <root url="jrt://C:/Program Files/AdoptOpenJDK/jdk-11.0.5.10-hotspot!/jdk.zipfs" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite">
+            <root url="https://docs.oracle.com/en/java/javase/11/docs/api/" type="simple" />
+          </root>
+        </javadocPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
   </component>
 </application>

@@ -1,28 +1,28 @@
 core/entities/Document.java
  core.entities.Document
-core/util/RetrieveCommitsLog.java
- core.util.RetrieveCommitsLog
-core/util/FileUtil.java
- core.util.FileUtil
-core/entities/Commit.java
- core.entities.Commit
-application/presenters/BasicPresenter.java
- application.presenters.BasicPresenter
-core/usecases/identifySATD/IdentifySATDInteractor.java
- core.usecases.identifySATD.IdentifySATDInteractor
-core/entities/detector/ImpossibleIdentification.java
- core.entities.detector.ImpossibleIdentification
-core/entities/detector/SATDDetector.java
- core.entities.detector.SATDDetector
-core/util/WordSplit.java
- core.util.WordSplit
-core/process/DataReader.java
- core.process.DataReader
-application/datareader/EnsembleLearner.java
- application.datareader.EnsembleLearner
 core/entities/detector/RealSATDDetector.java
  core.entities.detector.RealSATDDetector
+core/entities/Commit.java
+ core.entities.Commit
+core/process/DataReader.java
+ core.process.DataReader
+application/presenters/BasicPresenter.java
+ application.presenters.BasicPresenter
+application/datareader/EnsembleLearner.java
+ application.datareader.EnsembleLearner
+core/entities/detector/ImpossibleIdentification.java
+ core.entities.detector.ImpossibleIdentification
+core/util/FileUtil.java
+ core.util.FileUtil
+core/util/WordSplit.java
+ core.util.WordSplit
+core/entities/detector/SATDDetector.java
+ core.entities.detector.SATDDetector
+core/util/RetrieveCommitsLog.java
+ core.util.RetrieveCommitsLog
 application/actions/testMain.java
  application.actions.testMain
 application/actions/FindSATDAction.java
  application.actions.FindSATDAction
+core/usecases/identifySATD/IdentifySATDInteractor.java
+ core.usecases.identifySATD.IdentifySATDInteractor

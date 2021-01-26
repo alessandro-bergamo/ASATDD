@@ -110,7 +110,7 @@ public class EnsembleLearner
                 List<Document> trainDoc = DataReader.selectProject(comments, projectForTraining);
 
                 // System.out.println("building dataset for training");
-                String trainingDataPath = "tmp"+ File.separator +"trainingData.arff";
+                String trainingDataPath = "tmp"+ File.separator + "trainingData.arff";
                 DataReader.outputArffData(trainDoc, trainingDataPath);
 
                 // string to word vector (both for training and testing data)
@@ -123,7 +123,7 @@ public class EnsembleLearner
                 stw.setStemmer(stemmer);
 
                 WordsFromFile stopwords = new WordsFromFile();
-                stopwords.setStopwords(new File("dic"+ File.separator +"stopwords.txt"));
+                stopwords.setStopwords(new File("dic"+ File.separator + "stopwords.txt"));
                 stw.setStopwordsHandler(stopwords);
 
                 Instances trainSet = ConverterUtils.DataSource.read(trainingDataPath);

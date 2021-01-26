@@ -48,7 +48,8 @@ public class RetrieveCommitsLog
                     rev.getAuthorIdent().getWhen()
             );
 
-            /* CODICE DI STAMPA DEI FILE MODIFICATI NEL COMMIT
+            /*
+            CODICE DI STAMPA DEI FILE MODIFICATI NEL COMMIT
             System.out.println("\nCOMMIT START ----------------------------"+commit.getCommitID()+" MESSAGE: "+commit.getCommitMessage());
 
             List<DiffEntry> diffs;

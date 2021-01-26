@@ -7,10 +7,11 @@
     <converter id="android-proguard-options" />
   </applied-converters>
   <project-files>
-    <file path="C:\Users\Alessandro\IdeaProjects\testrepositoryforsatd\.idea\workspace.xml" timestamp="1611279623402" />
-    <file path="C:\Users\Alessandro\IdeaProjects\testrepositoryforsatd\.idea\modules.xml" timestamp="1611277524458" />
-    <file path="C:\Users\Alessandro\IdeaProjects\testrepositoryforsatd\.idea\vcs.xml" timestamp="1611277524440" />
-    <file path="C:\Users\Alessandro\IdeaProjects\testrepositoryforsatd\.idea\testrepositoryforsatd.iml" timestamp="1611277524387" />
-    <file path="C:\Users\Alessandro\IdeaProjects\testrepositoryforsatd\.idea\misc.xml" timestamp="1611277524430" />
+    <file path="C:\Users\Alessandro\IdeaProjects\testrepositoryforsatd\.idea\workspace.xml" timestamp="1611652531178" />
+    <file path="C:\Users\Alessandro\IdeaProjects\testrepositoryforsatd\.idea\modules.xml" timestamp="1611652531243" />
+    <file path="C:\Users\Alessandro\IdeaProjects\testrepositoryforsatd\.idea\vcs.xml" timestamp="1611652531227" />
+    <file path="C:\Users\Alessandro\IdeaProjects\testrepositoryforsatd\.idea\testrepositoryforsatd.iml" timestamp="1611652531171" />
+    <file path="C:\Users\Alessandro\IdeaProjects\testrepositoryforsatd\.idea\misc.xml" timestamp="1611652531195" />
+    <file path="C:\Users\Alessandro\IdeaProjects\testrepositoryforsatd\.idea\checkstyle-idea.xml" timestamp="1611652531212" />
   </project-files>
 </conversion>
