@@ -32,9 +32,9 @@
 
 <h3>Identify SATD</h3>
 
-Un "Self Admitted Technical Debt" è un modo per segnalare di aver pubblicato del codice incompleto, che richiede un rifacimento, che produce errori o che è realizzato solamente per far funzionare l'intero sistema ma che richiederà future modifiche.
+Un "Self Admitted Technical Debt" è un modo per segnalare di aver pubblicato del codice incompleto, che richiede un rifacimento, che produce errori o che è stato realizzato per permettere all'intero sistema di poter funzionare, ma con la premessa che saranno necessarie future modifiche.
 
-Questo plugin mira ad identificarli e mostrarli attraverso l'analisi testuale del "Commit Message", disponibile dopo la pubblicazione del codice al "master" branch.
+Questo plugin mira ad identificarli e mostrarli attraverso l'analisi testuale del <i>commit message</i>.
 
 
 ### Built With
@@ -52,7 +52,7 @@ Il plugin è realizzato interamente in:
 Il plugin si sofferma su pochi ed incisivi passi, tra cui:
 
 1. Clone della repository github 
-2. Rrecupero dei commit message
+2. Recupero dei commit message
 3. Analisi testuale di ogni commit message
 4. Identificazione delle possibili "keywords" potenzialmente rappresentanti dei Self-Admitted Technical Debt
 5. Segnalazione del Commit ID, user, date e message identificati al passo precedente
