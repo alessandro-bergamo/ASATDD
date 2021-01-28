@@ -52,7 +52,7 @@ Il plugin è realizzato interamente in:
 Il plugin si sofferma su pochi ed incisivi passi, tra cui:
 
 1. Clone della repository github 
-2. Recupero dei commit message
+2. Recupero dei commit
 3. Analisi testuale di ogni commit message
 4. Identificazione delle possibili "keywords" potenzialmente rappresentanti dei Self-Admitted Technical Debt
 5. Segnalazione del Commit ID, user, date e message identificati al passo precedente
