@@ -31,7 +31,8 @@ public class Document implements Comparable<Document>
 		{
 			if(tf.containsKey(word))
 				tf.put(word, tf.get(word)+1);
-			else tf.put(word, 1.0);
+			else
+				tf.put(word, 1.0);
 		}
 		//normalize tf
 		for(Map.Entry<String, Double> entry:this.tf.entrySet())

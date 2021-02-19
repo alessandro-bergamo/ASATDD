@@ -1,0 +1,334 @@
+{
+  "appInfo" : {
+    "build" : "202.7319.50",
+    "buildDate" : "Tue, 15 Sep 2020 00:21:31 +0200",
+    "productCode" : "IC",
+    "generated" : "Tue, 26 Jan 2021 10:30:02 +0100",
+    "os" : "Windows 10 10.0",
+    "runtime" : "JetBrains s.r.o. 11.0.8 11.0.8+10-b944.31"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "socket.io",
+    "numberOfFileProviders" : 1,
+    "totalNumberOfFiles" : 170,
+    "times" : {
+      "indexingTime" : "3 s 503 ms",
+      "scanFilesTime" : "35 ms",
+      "pushPropertiesTime" : "4 ms",
+      "indexExtensionsTime" : "< 1 ms",
+      "pushPropertiesStart" : "Tue, 26 Jan 2021 10:29:59 +0100",
+      "pushPropertiesEnd" : "Tue, 26 Jan 2021 10:29:59 +0100",
+      "scanFilesStart" : "Tue, 26 Jan 2021 10:29:59 +0100",
+      "scanFilesEnd" : "Tue, 26 Jan 2021 10:29:59 +0100",
+      "indexExtensionsStart" : "Tue, 26 Jan 2021 10:29:59 +0100",
+      "indexExtensionsEnd" : "Tue, 26 Jan 2021 10:29:59 +0100",
+      "indexingStart" : "Tue, 26 Jan 2021 10:29:59 +0100",
+      "indexingEnd" : "Tue, 26 Jan 2021 10:30:02 +0100"
+    },
+    "numberOfIndexingThreads" : 4,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "JSON",
+      "partOfTotalIndexingTime" : "22,6%",
+      "partOfTotalContentLoadingTime" : "24,1%",
+      "totalNumberOfFiles" : 37,
+      "totalFilesSize" : "1,24 MB",
+      "indexingSpeed" : "1,68 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'socket.io'",
+        "numberOfFiles" : 37,
+        "totalFilesSize" : "1,24 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "textmate",
+      "partOfTotalIndexingTime" : "19,2%",
+      "partOfTotalContentLoadingTime" : "1,8%",
+      "totalNumberOfFiles" : 35,
+      "totalFilesSize" : "715,88 kB",
+      "indexingSpeed" : "1,13 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'socket.io'",
+        "numberOfFiles" : 35,
+        "totalFilesSize" : "715,88 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "Markdown",
+      "partOfTotalIndexingTime" : "18,0%",
+      "partOfTotalContentLoadingTime" : "11,8%",
+      "totalNumberOfFiles" : 19,
+      "totalFilesSize" : "42,67 kB",
+      "indexingSpeed" : "72,26 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'socket.io'",
+        "numberOfFiles" : 19,
+        "totalFilesSize" : "42,67 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "EditorConfig",
+      "partOfTotalIndexingTime" : "12,7%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "290 B",
+      "indexingSpeed" : "692 B/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'socket.io'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "290 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "JavaScript",
+      "partOfTotalIndexingTime" : "9,7%",
+      "partOfTotalContentLoadingTime" : "41,3%",
+      "totalNumberOfFiles" : 42,
+      "totalFilesSize" : "377,57 kB",
+      "indexingSpeed" : "1,18 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'socket.io'",
+        "numberOfFiles" : 42,
+        "totalFilesSize" : "377,57 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "YAML",
+      "partOfTotalIndexingTime" : "7,5%",
+      "partOfTotalContentLoadingTime" : "2,6%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "2,7 kB",
+      "indexingSpeed" : "10,97 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'socket.io'",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "2,7 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "PLAIN_TEXT",
+      "partOfTotalIndexingTime" : "4,0%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "495,25 kB",
+      "indexingSpeed" : "3,78 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'socket.io'",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "495,25 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "HTML",
+      "partOfTotalIndexingTime" : "3,7%",
+      "partOfTotalContentLoadingTime" : "10,0%",
+      "totalNumberOfFiles" : 12,
+      "totalFilesSize" : "9,42 kB",
+      "indexingSpeed" : "77,62 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'socket.io'",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : "9,42 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "CSS",
+      "partOfTotalIndexingTime" : "1,2%",
+      "partOfTotalContentLoadingTime" : "3,7%",
+      "totalNumberOfFiles" : 9,
+      "totalFilesSize" : "17,29 kB",
+      "indexingSpeed" : "429,74 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'socket.io'",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : "17,29 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "SVG",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "2,68 kB",
+      "indexingSpeed" : "108,1 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'socket.io'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "2,68 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    }, {
+      "fileType" : "GitIgnore file",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "2,8%",
+      "totalNumberOfFiles" : 4,
+      "totalFilesSize" : "1,29 kB",
+      "indexingSpeed" : "56,07 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'socket.io'",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "1,29 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100,0%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "TodoIndex",
+      "partOfTotalIndexingTime" : "36,7%",
+      "totalNumberOfFiles" : 170,
+      "totalFilesSize" : "2,91 MB",
+      "indexingSpeed" : "2,41 MB/s"
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : "18,1%",
+      "totalNumberOfFiles" : 170,
+      "totalFilesSize" : "2,91 MB",
+      "indexingSpeed" : "4,87 MB/s"
+    }, {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : "15,3%",
+      "totalNumberOfFiles" : 31,
+      "totalFilesSize" : "52,09 kB",
+      "indexingSpeed" : "103,22 kB/s"
+    }, {
+      "indexId" : "editorconfig.index.name",
+      "partOfTotalIndexingTime" : "12,6%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "290 B",
+      "indexingSpeed" : "700 B/s"
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : "11,5%",
+      "totalNumberOfFiles" : 170,
+      "totalFilesSize" : "2,91 MB",
+      "indexingSpeed" : "7,66 MB/s"
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex",
+      "partOfTotalIndexingTime" : "1,8%",
+      "totalNumberOfFiles" : 42,
+      "totalFilesSize" : "377,57 kB",
+      "indexingSpeed" : "6,43 MB/s"
+    }, {
+      "indexId" : "yaml.keys.name",
+      "partOfTotalIndexingTime" : "1,7%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "2,7 kB",
+      "indexingSpeed" : "48,41 kB/s"
+    }, {
+      "indexId" : "json.file.root.values",
+      "partOfTotalIndexingTime" : "1,5%",
+      "totalNumberOfFiles" : 37,
+      "totalFilesSize" : "1,24 MB",
+      "indexingSpeed" : "24,57 MB/s"
+    }, {
+      "indexId" : "html5.custom.attributes.index",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 12,
+      "totalFilesSize" : "9,42 kB",
+      "indexingSpeed" : "469,73 kB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Module 'socket.io'",
+      "totalNumberOfFiles" : 170,
+      "totalIndexingTime" : "3 s 449 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JSON",
+        "numberOfFiles" : 37,
+        "totalFilesSize" : "1,24 MB",
+        "partOfTotalIndexingTime" : "22,6%",
+        "partOfTotalContentLoadingTime" : "24,1%"
+      }, {
+        "fileType" : "textmate",
+        "numberOfFiles" : 35,
+        "totalFilesSize" : "715,88 kB",
+        "partOfTotalIndexingTime" : "19,2%",
+        "partOfTotalContentLoadingTime" : "1,8%"
+      }, {
+        "fileType" : "Markdown",
+        "numberOfFiles" : 19,
+        "totalFilesSize" : "42,67 kB",
+        "partOfTotalIndexingTime" : "18,0%",
+        "partOfTotalContentLoadingTime" : "11,8%"
+      }, {
+        "fileType" : "EditorConfig",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "290 B",
+        "partOfTotalIndexingTime" : "12,7%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "JavaScript",
+        "numberOfFiles" : 42,
+        "totalFilesSize" : "377,57 kB",
+        "partOfTotalIndexingTime" : "9,7%",
+        "partOfTotalContentLoadingTime" : "41,3%"
+      }, {
+        "fileType" : "YAML",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "2,7 kB",
+        "partOfTotalIndexingTime" : "7,5%",
+        "partOfTotalContentLoadingTime" : "2,6%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "495,25 kB",
+        "partOfTotalIndexingTime" : "4,0%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "HTML",
+        "numberOfFiles" : 12,
+        "totalFilesSize" : "9,42 kB",
+        "partOfTotalIndexingTime" : "3,7%",
+        "partOfTotalContentLoadingTime" : "10,0%"
+      }, {
+        "fileType" : "CSS",
+        "numberOfFiles" : 9,
+        "totalFilesSize" : "17,29 kB",
+        "partOfTotalIndexingTime" : "1,2%",
+        "partOfTotalContentLoadingTime" : "3,7%"
+      }, {
+        "fileType" : "SVG",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "2,68 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "GitIgnore file",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "1,29 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "2,8%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "TodoIndex",
+        "partOfTotalIndexingTime" : "36,7%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "18,1%"
+      }, {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "15,3%"
+      }, {
+        "indexId" : "editorconfig.index.name",
+        "partOfTotalIndexingTime" : "12,6%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "11,5%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1,8%"
+      }, {
+        "indexId" : "yaml.keys.name",
+        "partOfTotalIndexingTime" : "1,7%"
+      }, {
+        "indexId" : "json.file.root.values",
+        "partOfTotalIndexingTime" : "1,5%"
+      } ],
+      "fastIndexers" : [ "html5.custom.attributes.index" ]
+    } ]
+  }
+}

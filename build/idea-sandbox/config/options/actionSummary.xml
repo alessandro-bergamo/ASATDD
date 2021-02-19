@@ -5,7 +5,7 @@
         <ActionSummary times="1" last="1611279261743" />
       </entry>
       <entry key="CloseProject">
-        <ActionSummary times="4" last="1611284746373" />
+        <ActionSummary times="7" last="1611699892343" />
       </entry>
       <entry key="EditorChooseLookupItem">
         <ActionSummary times="1" last="1611279297575" />
@@ -41,10 +41,16 @@
         <ActionSummary times="2" last="1611283164566" />
       </entry>
       <entry key="WelcomeScreen.OpenProject">
-        <ActionSummary times="3" last="1611287404069" />
+        <ActionSummary times="5" last="1611655983165" />
       </entry>
       <entry key="com.intellij.ide.ReopenProjectAction">
-        <ActionSummary times="1" last="1611279626695" />
+        <ActionSummary times="3" last="1611699894870" />
+      </entry>
+      <entry key="com.intellij.notification.NotificationAction$Simple">
+        <ActionSummary times="1" last="1611653380152" />
+      </entry>
+      <entry key="com.intellij.openapi.ui.DialogWrapper$5">
+        <ActionSummary times="6" last="1611698226118" />
       </entry>
     </data>
   </component>
