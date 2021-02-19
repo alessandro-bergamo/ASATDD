@@ -2,7 +2,7 @@
 <p align="center">
   
   <h3 align="center">
-    <img src="https://i.imgur.com/aNJY3Ep_d.webp?maxwidth=500&fidelity=grand"></img>
+    <a href="https://github.com/alessandro-bergamo/Identify-SATD/src"><img src="https://i.imgur.com/aNJY3Ep_d.webp?maxwidth=500&fidelity=grand"></img></a>
    </h3>
   
   <h3 align="center">Identify SATD</h3>
