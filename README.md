@@ -4,11 +4,9 @@
   <h3 align="center">
     <a href="https://github.com/alessandro-bergamo/ASATDD/tree/main/src"><img src="https://i.imgur.com/CIm8AyL_d.webp?maxwidth=760&fidelity=grand"></img></a>
    </h3>
-  
-  <h3 align="center">Identify SATD</h3>
 
   <p align="center">
-    Identify SATD è un plugin per IntelliJ utile all'identificazione dei "Self Admitted Technical Debt"
+    ASATDD, acronimo di "Automatic Self-Admitted Technical Debt Detection", è un plugin per IntelliJ utile all'identificazione dei "Self Admitted Technical Debt"
     <br />
     <a href="https://github.com/alessandro-bergamo/ASATDD/tree/main/src"><strong>Esplora il codice »</strong></a>
     <br />
