@@ -2,6 +2,7 @@ package core.util;
 
 import core.entities.Commit;
 import core.entities.detector.ImpossibleIdentification;
+import javafx.util.Pair;
 import org.eclipse.jgit.api.Git; //inserire nel readme l'utlizzo di questa libreria
 import org.eclipse.jgit.lib.*;
 import org.eclipse.jgit.revwalk.RevCommit;
@@ -20,7 +21,7 @@ public class RetrieveCommitsLog
     }
 
 
-    public List<Commit> retrieveCommitsLogs(String repository_path)
+    public Pair<String, List<Commit>> retrieveCommitsLogs(String repository_path)
     {
         try {
             repository = Git.open(new File(repository_path)).getRepository();
@@ -30,6 +31,8 @@ public class RetrieveCommitsLog
 
         Git git = new Git(repository);
         Iterable<RevCommit> log;
+
+        String url = repository.getConfig().getString("remote", "origin", "url");
 
         try {
             log = git.log().call();
@@ -86,12 +89,15 @@ public class RetrieveCommitsLog
 
         Collections.reverse(logCommits);
 
-        return logCommits;
+        repositoryUrl_commits = new Pair<>(url, logCommits);
+
+        return repositoryUrl_commits;
     }
 
 
 
     private Repository repository;
-    private final ArrayList<Commit> logCommits;
+    private ArrayList<Commit> logCommits;
+    private Pair<String, List<Commit>> repositoryUrl_commits;
 
 }

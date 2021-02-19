@@ -12,6 +12,7 @@ import core.entities.Commit;
 import core.entities.detector.RealSATDDetector;
 import core.usecases.identifySATD.IdentifySATDInteractor;
 import core.util.RetrieveCommitsLog;
+import javafx.util.Pair;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
@@ -37,21 +38,26 @@ public class FindSATDAction extends AnAction
 
                 try {
                     IdentifySATDInteractor identifySATDInteractor = new IdentifySATDInteractor(retrieveCommitsLog, realSATDDetector, Objects.requireNonNull(project).getBasePath());
-                    SATD_found = identifySATDInteractor.execute();
+                    owner_commits = identifySATDInteractor.execute();
+
+                    SATD_found = owner_commits.getValue();
+                    repository_url = owner_commits.getKey();
                 } catch (Exception exception) {
-                    Messages.showMessageDialog(e.getProject(), "Identification not successfull", "WARNING!", Messages.getErrorIcon());
+                    Messages.showMessageDialog(e.getProject(), "Detection not successfull", "WARNING!", Messages.getErrorIcon());
                 }
             });
 
-        }, "Identifying self-admitted technical debt", false, e.getProject());
+        }, "Detecting self-admitted technical debt", false, e.getProject());
 
-        Messages.showMessageDialog(e.getProject(), "Identification completed successfully! Found " + SATD_found.size() + " Self-Admitted Technical Debt", "ATTENTION!", Messages.getInformationIcon());
+        Messages.showMessageDialog(e.getProject(), "Detection completed successfully! Found " + SATD_found.size() + " Self-Admitted Technical Debt", "ATTENTION!", Messages.getInformationIcon());
 
-        basicPresenter.runFrame(SATD_found);
+        basicPresenter.runFrame(repository_url, SATD_found);
     }
 
 
 
+    private Pair<String, List<Commit>> owner_commits;
+    private String repository_url;
     private List<Commit> SATD_found;
     private final BasicPresenter basicPresenter = new BasicPresenter();
 

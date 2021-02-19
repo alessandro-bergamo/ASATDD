@@ -1,16 +1,11 @@
 package application.actions;
 
-import com.intellij.openapi.project.Project;
 import core.entities.Commit;
 import core.entities.detector.RealSATDDetector;
-import core.usecases.identifySATD.IdentifySATDInteractor;
 import core.util.RetrieveCommitsLog;
+import javafx.util.Pair;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Objects;
 
 public class testMain
 {
@@ -22,7 +17,9 @@ public class testMain
         RetrieveCommitsLog retrieveCommitsLog = new RetrieveCommitsLog();
         RealSATDDetector realSATDDetector = new RealSATDDetector();
 
-        List<Commit> commits = retrieveCommitsLog.retrieveCommitsLogs("C://Users//Alessandro//IdeaProjects//testrepositoryforsatd");
+        Pair<String, List<Commit>> owner_commits = retrieveCommitsLog.retrieveCommitsLogs("C://Users//Alessandro//IdeaProjects//testrepositoryforsatd");
+
+        List<Commit> commits = owner_commits.getValue();
 
         try {
             SATD_found = realSATDDetector.detectSATD(commits);

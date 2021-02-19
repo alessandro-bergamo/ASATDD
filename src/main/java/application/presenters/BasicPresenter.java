@@ -1,19 +1,25 @@
 package application.presenters;
 
+import com.intellij.openapi.ui.Messages;
 import core.entities.Commit;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.util.ArrayList;
+
+import java.io.File;
 import java.util.Date;
 import java.util.List;
+
+import java.awt.datatransfer.StringSelection;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
 
 public class BasicPresenter
 {
 
-    public void runFrame(List<Commit> commitArrayList)
+    public void runFrame(String repository_url, List<Commit> commitArrayList)
     {
-        JFrame frame = new JFrame("SATD-Detector");
+        JFrame frame = new JFrame("Automatic Self-Admitted Technical Debt Detection");
 
         String col[] = {"ID", "User", "Date", "Message"};
 
@@ -35,6 +41,23 @@ public class BasicPresenter
 
         scrollPane = new JScrollPane(table_SATD);
 
+        table_SATD.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                int row = table_SATD.rowAtPoint(evt.getPoint());
+                int col = table_SATD.columnAtPoint(evt.getPoint());
+                if (row >= 0 && col >= 0) {
+                    String commit_url = repository_url.substring(0, repository_url.length()-4) + "/commit/" +commitArrayList.get(row).getCommitID();
+                    System.out.println(commit_url);  //test string
+                    StringSelection stringSelection = new StringSelection(commit_url);
+                    Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+                    clipboard.setContents(stringSelection, null);
+                }
+
+                Messages.showMessageDialog("Link copied to clipboard", "", Messages.getInformationIcon());
+            }
+        });
+
         frame.setSize(1200, 400);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -45,6 +68,7 @@ public class BasicPresenter
 
 
     private JTable table_SATD;
+    private JPanel mainPanel;
     private JScrollPane scrollPane;
 
 }
