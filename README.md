@@ -2,7 +2,7 @@
 <p align="center">
   
   <h3 align="center">
-    <a href="https://github.com/alessandro-bergamo/Identify-SATD/tree/main/src"><img src="https://i.imgur.com/aNJY3Ep_d.webp?maxwidth=500&fidelity=grand"></img></a>
+    <a href="https://github.com/alessandro-bergamo/Identify-SATD/tree/main/src"><img src="https://i.imgur.com/CIm8AyL_d.webp?maxwidth=760&fidelity=grand"></img></a>
    </h3>
   
   <h3 align="center">Identify SATD</h3>
