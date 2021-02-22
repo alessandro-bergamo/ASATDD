@@ -149,7 +149,7 @@ public class RealSATDDetector implements SATDDetector
             SnowballStemmer stemmer = new SnowballStemmer();
             stw.setStemmer(stemmer);
 
-            FileUtils.copyInputStreamToFile(stopWordsIS, new File(dataDirectoryPath + File.separator + "stopwords.txt"));
+            FileUtils.copyInputStreamToFile(stopWordsIS, new File(dataDirectoryPath + File.separator + "stopwords"));
 
             WordsFromFile stopwords = new WordsFromFile();
             stopwords.setStopwords(new File(dataDirectoryPath + File.separator + "stopwords.txt"));

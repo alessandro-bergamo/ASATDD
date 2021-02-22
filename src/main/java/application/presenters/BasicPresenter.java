@@ -41,14 +41,16 @@ public class BasicPresenter
 
         scrollPane = new JScrollPane(table_SATD);
 
-        table_SATD.addMouseListener(new java.awt.event.MouseAdapter() {
+        table_SATD.addMouseListener(new java.awt.event.MouseAdapter()
+        {
             @Override
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 int row = table_SATD.rowAtPoint(evt.getPoint());
                 int col = table_SATD.columnAtPoint(evt.getPoint());
-                if (row >= 0 && col >= 0) {
+                if (row >= 0 && col >= 0)
+                {
                     String commit_url = repository_url.substring(0, repository_url.length()-4) + "/commit/" +commitArrayList.get(row).getCommitID();
-                    System.out.println(commit_url);  //test string
                     StringSelection stringSelection = new StringSelection(commit_url);
                     Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
                     clipboard.setContents(stringSelection, null);
