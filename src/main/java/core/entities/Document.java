@@ -1,6 +1,7 @@
 package core.entities;
 
 import core.util.WordSplit;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 import java.util.List;
@@ -10,13 +11,9 @@ import java.util.Map;
 public class Document implements Comparable<Document>
 {
 
-	public int compareTo(Document doc)
+	public int compareTo(@NotNull Document doc)
 	{
-		if(this.scoreForRank<doc.scoreForRank)
-			return -1;
-		else if(this.scoreForRank>doc.scoreForRank)
-			return 1;
-		else return 0;
+		return 0;	//empty method
 	}
 
 
@@ -26,7 +23,8 @@ public class Document implements Comparable<Document>
 		this.words=WordSplit.split(content);
 		
 		//build term frequency
-		this.tf = new HashMap<String,Double>();
+		this.tf = new HashMap<>();
+
 		for(String word:this.words)
 		{
 			if(tf.containsKey(word))
@@ -34,6 +32,7 @@ public class Document implements Comparable<Document>
 			else
 				tf.put(word, 1.0);
 		}
+
 		//normalize tf
 		for(Map.Entry<String, Double> entry:this.tf.entrySet())
 		{
@@ -47,24 +46,12 @@ public class Document implements Comparable<Document>
 		return words;
 	}
 
-	public void setWords(List<String> words) {
-		this.words = words;
-	}
-
 	public String getContent() {
 		return content;
 	}
 
-	public void setContent(String content) {
-		this.content = content;
-	}
-
 	public String getProject() {
 		return project;
-	}
-
-	public void setProject(String project) {
-		this.project = project;
 	}
 
 	public String getLabel() {
@@ -75,40 +62,11 @@ public class Document implements Comparable<Document>
 		this.label = label;
 	}
 
-	public Map<String, Double> getTf() {
-		return tf;
-	}
-
-	public void setTf(Map<String, Double> tf) {
-		this.tf = tf;
-	}
-
-	public Map<String, Double> getTf_idf() {
-		return tf_idf;
-	}
-
-	public void setTf_idf(Map<String, Double> tf_idf) {
-		this.tf_idf = tf_idf;
-	}
-
-	public double getScoreForRank() {
-		return scoreForRank;
-	}
-
-	public void setScoreForRank(double scoreForRank) {
-		this.scoreForRank = scoreForRank;
-	}
 
 
-
-	private String content;
+	private String content, project, label;
 	private List<String> words;
 
-	private String project,label;
-
 	private Map<String,Double> tf;
-	private Map<String,Double> tf_idf;
-
-	double scoreForRank;
 
 }

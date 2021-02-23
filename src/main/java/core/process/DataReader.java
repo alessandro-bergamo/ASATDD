@@ -14,7 +14,7 @@ public class DataReader
 	public static void outputArffData(List<Document> comments, String outputFilePath)
 	{
 		// arff declare info
-		List<String> lines = new ArrayList<String>();
+		List<String> lines = new ArrayList<>();
 		lines.add("@relation 'CommitMessages'");
 		lines.add("");
 		lines.add("@attribute Text string");
@@ -25,15 +25,15 @@ public class DataReader
 
 		for (Document document : comments)
 		{
-			String temp = "'";
+			StringBuilder temp = new StringBuilder("'");
 			for (String word : document.getWords())
-				temp = temp + word + " ";
+				temp.append(word).append(" ");
 			if (document.getLabel().equals("WITHOUT_CLASSIFICATION"))
-				temp = temp + "',negative";// negative comments
+				temp.append("',negative");// negative comments
 			else
-				temp = temp + "',positive";
+				temp.append("',positive");
 
-			lines.add(temp);
+			lines.add(temp.toString());
 		}
 
 		FileUtil.writeLinesToFile(lines, outputFilePath);
@@ -66,17 +66,17 @@ public class DataReader
 			{
 				comments.add(new Document(line));
 			} else {
-				String temp = "";
+				StringBuilder temp = new StringBuilder();
 				for (int j = i; j < lines.size(); j++)
 				{
-					temp = temp + lines.get(j);
+					temp.append(lines.get(j));
 					if (lines.get(j).contains("*/\""))
 					{
 						i = j;
 						break;
 					}
 				}
-				comments.add(new Document(temp));
+				comments.add(new Document(temp.toString()));
 			}
 		}
 
@@ -86,18 +86,17 @@ public class DataReader
 		// remove duplicate and empty comments
 		List<Document> res = new ArrayList<>();
 		Set<String> content = new HashSet<>();
+
 		for (Document doc : comments)
 		{
 			if (doc.getWords().isEmpty() || content.contains(doc.getContent()))
 				continue;
+
 			content.add(doc.getContent());
 			res.add(doc);
 		}
 
 		return res;
 	}
-
-
-	private static int j = 0;
 
 }

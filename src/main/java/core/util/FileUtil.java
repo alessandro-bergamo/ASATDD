@@ -3,7 +3,6 @@ package core.util;
 import java.io.*;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class FileUtil
@@ -17,13 +16,11 @@ public class FileUtil
 		try {
 			reader = new BufferedReader(new FileReader(new File(filePath)));
 			
-			String line = null;
+			String line;
 
 			while ((line = reader.readLine()) != null)
 				lines.add(line);
 
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
@@ -69,23 +66,9 @@ public class FileUtil
 	{
 		List<String> lines = FileUtil.readLinesFromFile(filePath);
 
-		Iterator<String> iterator = lines.iterator();
-
-		while (iterator.hasNext()) {
-			String line = iterator.next();
-			if (line.trim().isEmpty())
-				iterator.remove();
-		}
+		lines.removeIf(line -> line.trim().isEmpty());
 
 		FileUtil.writeLinesToFile(lines, filePath);
-	}
-
-
-	public static void compactMessage(String filePath)
-	{
-		List<String> lines = FileUtil.readLinesFromFile(filePath);
-
-
 	}
 
 }

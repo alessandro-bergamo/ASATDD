@@ -1,18 +1,20 @@
 package application.presenters;
 
 import com.intellij.openapi.ui.Messages;
+import com.intellij.ui.components.JBScrollPane;
+import com.intellij.ui.table.JBTable;
 import core.entities.Commit;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-import java.io.File;
 import java.util.Date;
 import java.util.List;
 
 import java.awt.datatransfer.StringSelection;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
+
 
 public class BasicPresenter
 {
@@ -21,7 +23,7 @@ public class BasicPresenter
     {
         JFrame frame = new JFrame("Automatic Self-Admitted Technical Debt Detection");
 
-        String col[] = {"ID", "User", "Date", "Message"};
+        String[] col = {"ID", "User", "Date", "Message"};
 
         DefaultTableModel tableModel = new DefaultTableModel(col, 0);
         table_SATD = new JTable(tableModel);
@@ -39,7 +41,7 @@ public class BasicPresenter
             tableModel.addRow(data);
         }
 
-        scrollPane = new JScrollPane(table_SATD);
+        JScrollPane scrollPane = new JScrollPane(table_SATD);
 
         table_SATD.addMouseListener(new java.awt.event.MouseAdapter()
         {
@@ -71,6 +73,5 @@ public class BasicPresenter
 
     private JTable table_SATD;
     private JPanel mainPanel;
-    private JScrollPane scrollPane;
 
 }

@@ -2,6 +2,7 @@ package core.entities;
 
 import java.util.Date;
 
+
 public class Commit
 {
 
@@ -15,23 +16,17 @@ public class Commit
 
     public String getCommitID() { return commitID; }
 
-    public void setCommitID(String commitID) { this.commitID = commitID; }
-
     public String getCommitUser() { return commitUser; }
-
-    public void setCommitUser(String commitUser) { this.commitUser = commitUser; }
 
     public String getCommitMessage() { return commitMessage; }
 
-    public void setCommitMessage(String commitMessage) { this.commitMessage = commitMessage; }
-
     public Date getCommitDate() { return commitDate; }
-
-    public void setCommitDate(Date commitDate) { this.commitDate = commitDate; }
 
     @Override
     public String toString() { return "Commit ID: "+commitID+" -/- Commit User: "+commitUser+" -/- Commit Date: "+commitDate+" -/- Commit Message: "+commitMessage;}
 
+
+    
     protected String commitID, commitUser, commitMessage;
     protected Date commitDate;
 

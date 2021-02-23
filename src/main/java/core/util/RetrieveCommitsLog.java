@@ -1,9 +1,9 @@
 package core.util;
 
 import core.entities.Commit;
-import core.entities.detector.ImpossibleIdentification;
+import core.entities.detector.ImpossibleDetection;
 import javafx.util.Pair;
-import org.eclipse.jgit.api.Git; //inserire nel readme l'utlizzo di questa libreria
+import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.lib.*;
 import org.eclipse.jgit.revwalk.RevCommit;
 
@@ -26,7 +26,7 @@ public class RetrieveCommitsLog
         try {
             repository = Git.open(new File(repository_path)).getRepository();
         } catch (Exception e) {
-            throw new ImpossibleIdentification();
+            throw new ImpossibleDetection();
         }
 
         Git git = new Git(repository);
@@ -37,7 +37,7 @@ public class RetrieveCommitsLog
         try {
             log = git.log().call();
         } catch (Exception e) {
-            throw new ImpossibleIdentification();
+            throw new ImpossibleDetection();
         }
 
         for(Iterator<RevCommit> iterator = log.iterator(); iterator.hasNext();)
@@ -57,7 +57,6 @@ public class RetrieveCommitsLog
             List<DiffEntry> diffs;
             try (RevWalk rw = new RevWalk(repository))
             {
-
                 DiffFormatter df = new DiffFormatter(DisabledOutputStream.INSTANCE);
 
                 df.setRepository(repository);

@@ -6,12 +6,11 @@ import core.process.DataReader;
 import core.util.FileUtil;
 
 import org.apache.commons.io.FileUtils;
+
 import weka.attributeSelection.InfoGainAttributeEval;
 import weka.attributeSelection.Ranker;
-
 import weka.classifiers.Classifier;
 import weka.classifiers.bayes.NaiveBayesMultinomial;
-
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.SerializationHelper;
@@ -19,7 +18,6 @@ import weka.core.converters.ConverterUtils;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.core.stemmers.SnowballStemmer;
 import weka.core.stopwords.WordsFromFile;
-
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.AttributeSelection;
 import weka.filters.unsupervised.attribute.StringToWordVector;
@@ -28,6 +26,7 @@ import java.io.*;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class RealSATDDetector implements SATDDetector
 {
@@ -45,6 +44,10 @@ public class RealSATDDetector implements SATDDetector
     public List<Commit> detectSATD(List<Commit> commits) throws Exception
     {
         String dataDirectoryPath = System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "data";
+        String commentsFilePath = dataDirectoryPath + File.separator + "comments";
+        String testDataFilePath = dataDirectoryPath + File.separator + "testData.arff";
+        String stopwordsFilePath = dataDirectoryPath + File.separator + "stopwords.txt";
+
         File dataFileDirectory = new File(dataDirectoryPath);
 
         if(!dataFileDirectory.isDirectory())
@@ -61,22 +64,21 @@ public class RealSATDDetector implements SATDDetector
         {
             List<String> commit_messages = new ArrayList<>();
 
-            for(int I=0; I<commits.size(); I++)
+            for(Commit commit : commits)
             {
-                String commitMessage = commits.get(I).getCommitMessage();
+                String commitMessage = commit.getCommitMessage();
                 commitMessage = commitMessage.replace("\n", " ").replace("\r", "");
 
                 commit_messages.add("// " + commitMessage);
             }
 
-            FileUtil.writeLinesToFile(commit_messages, dataFileDirectory + File.separator + "comments");
-            FileUtil.removeBlankLines(dataDirectoryPath + File.separator + "comments");
+            FileUtil.writeLinesToFile(commit_messages, commentsFilePath);
+            FileUtil.removeBlankLines(commentsFilePath);
         }
 
         List<Document> comments = DataReader.readComments(dataFileDirectory + File.separator);
 
-        String testDataPath = dataFileDirectory + File.separator + "testData.arff";
-        DataReader.outputArffData(comments, testDataPath);
+        DataReader.outputArffData(comments, testDataFilePath);
 
         StringToWordVector stw = new StringToWordVector(100000);
         stw.setOutputWordCounts(true);
@@ -87,17 +89,18 @@ public class RealSATDDetector implements SATDDetector
         stw.setStemmer(stemmer);
 
         WordsFromFile stopwords = new WordsFromFile();
-        stopwords.setStopwords(new File("dic/stopwords.txt"));
+        stopwords.setStopwords(new File(stopwordsFilePath));
         stw.setStopwordsHandler(stopwords);
 
-        Instances commitData = DataSource.read(testDataPath);
+        Instances commitData = DataSource.read(testDataFilePath);
         stw.setInputFormat(commitData);
         commitData = Filter.useFilter(commitData, stw);
         commitData.setClassIndex(0);
 
-        AttributeSelection attSelection = new AttributeSelection();
         Ranker ranker = new Ranker();
         ranker.setNumToSelect((int) (commitData.numAttributes() * ratio));
+
+        AttributeSelection attSelection = new AttributeSelection();
         InfoGainAttributeEval ifg = new InfoGainAttributeEval();
         attSelection.setEvaluator(ifg);
         attSelection.setSearch(ranker);
@@ -127,19 +130,18 @@ public class RealSATDDetector implements SATDDetector
         Classifier classifier;
 
         String dataDirectoryPath = System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "data";
-        String path = System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "models";
-        directory_classifiers = new File(path);
+        String stopwordsFilePath = dataDirectoryPath + File.separator + "stopwords.txt";
+        String classifierPath = System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "models";
+        String classifierFilePath = classifierPath + File.separator + "SATDClassifier.model";
 
-        String classifierFileName = directory_classifiers + File.separator + "SATDClassifier.model";
-        //String trainingPath = "data" + File.separator + "trainingData.arff";
-        //String stopwordsPath = "dic" + File.separator + "stopwords.txt";
+        File directory_classifiers = new File(classifierPath);
 
         InputStream trainingFile = this.getClass().getResourceAsStream("/trainingData.arff");
         InputStream stopWordsIS = this.getClass().getResourceAsStream("/stopwords.txt");
 
         if(directory_classifiers.isDirectory() && directory_classifiers.listFiles().length == 1)
         {
-            classifier = (Classifier) SerializationHelper.read(classifierFileName);
+            classifier = (Classifier) SerializationHelper.read(classifierFilePath);
         } else {
             StringToWordVector stw = new StringToWordVector(100000);
             stw.setOutputWordCounts(true);
@@ -149,10 +151,10 @@ public class RealSATDDetector implements SATDDetector
             SnowballStemmer stemmer = new SnowballStemmer();
             stw.setStemmer(stemmer);
 
-            FileUtils.copyInputStreamToFile(stopWordsIS, new File(dataDirectoryPath + File.separator + "stopwords"));
+            FileUtils.copyInputStreamToFile(stopWordsIS, new File(stopwordsFilePath));
 
             WordsFromFile stopwords = new WordsFromFile();
-            stopwords.setStopwords(new File(dataDirectoryPath + File.separator + "stopwords.txt"));
+            stopwords.setStopwords(new File(stopwordsFilePath));
             stw.setStopwordsHandler(stopwords);
 
             Instances trainSet = ConverterUtils.DataSource.read(trainingFile);
@@ -160,11 +162,10 @@ public class RealSATDDetector implements SATDDetector
             trainSet = Filter.useFilter(trainSet, stw);
             trainSet.setClassIndex(0);
 
-            AttributeSelection attSelection = new AttributeSelection();
-
             Ranker ranker = new Ranker();
             ranker.setNumToSelect((int) (trainSet.numAttributes() * ratio));
 
+            AttributeSelection attSelection = new AttributeSelection();
             InfoGainAttributeEval ifg = new InfoGainAttributeEval();
             attSelection.setEvaluator(ifg);
             attSelection.setSearch(ranker);
@@ -175,12 +176,12 @@ public class RealSATDDetector implements SATDDetector
             classifier = new NaiveBayesMultinomial();
             classifier.buildClassifier(trainSet);
 
-            directory_classifiers = new File(path);
+            directory_classifiers = new File(classifierPath);
 
             if(!directory_classifiers.isDirectory())
                 directory_classifiers.mkdirs();
 
-            SerializationHelper.write(classifierFileName, classifier);
+            SerializationHelper.write(classifierFilePath, classifier);
         }
 
         return classifier;
@@ -210,7 +211,6 @@ public class RealSATDDetector implements SATDDetector
     private List<Integer> index_identified;
     private List<Commit> commits_identified;
     private double ratio = 0.1;
-    private File directory_classifiers;
 
 }
 

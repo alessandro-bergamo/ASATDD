@@ -1,6 +1,7 @@
 package application.actions;
 
 import application.presenters.BasicPresenter;
+
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.application.ApplicationManager;
@@ -8,14 +9,17 @@ import com.intellij.openapi.progress.ProgressIndicator;
 import com.intellij.openapi.progress.ProgressManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
+
 import core.entities.Commit;
 import core.entities.detector.RealSATDDetector;
 import core.usecases.identifySATD.IdentifySATDInteractor;
 import core.util.RetrieveCommitsLog;
-import javafx.util.Pair;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
+import javafx.util.Pair;
+
+import org.jetbrains.annotations.NotNull;
+
 
 public class FindSATDAction extends AnAction
 {

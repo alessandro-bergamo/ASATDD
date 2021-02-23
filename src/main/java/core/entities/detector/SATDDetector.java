@@ -4,6 +4,7 @@ import core.entities.Commit;
 
 import java.util.List;
 
+
 public interface SATDDetector
 {
 

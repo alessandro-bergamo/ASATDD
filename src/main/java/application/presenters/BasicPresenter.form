@@ -15,7 +15,7 @@
         <properties/>
         <border type="line"/>
         <children>
-          <component id="136f5" class="javax.swing.JTable" binding="table_SATD">
+          <component id="136f5" class="com.intellij.ui.table.JBTable" binding="table_SATD">
             <constraints/>
             <properties>
               <font name="Fira Code" size="10" style="1"/>
