@@ -25,7 +25,7 @@ public class Document implements Comparable<Document>
 		//build term frequency
 		this.tf = new HashMap<>();
 
-		for(String word:this.words)
+		for(String word: this.words)
 		{
 			if(tf.containsKey(word))
 				tf.put(word, tf.get(word)+1);

@@ -5,6 +5,7 @@ import core.entities.Document;
 import core.process.DataReader;
 import core.util.FileUtil;
 
+import core.util.PorterStemmer;
 import org.apache.commons.io.FileUtils;
 
 import weka.attributeSelection.InfoGainAttributeEval;
@@ -16,7 +17,7 @@ import weka.core.Instances;
 import weka.core.SerializationHelper;
 import weka.core.converters.ConverterUtils;
 import weka.core.converters.ConverterUtils.DataSource;
-import weka.core.stemmers.SnowballStemmer;
+import weka.core.stemmers.Stemmer;
 import weka.core.stopwords.WordsFromFile;
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.AttributeSelection;
@@ -46,7 +47,9 @@ public class RealSATDDetector implements SATDDetector
         String dataDirectoryPath = System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "data";
         String commentsFilePath = dataDirectoryPath + File.separator + "comments";
         String testDataFilePath = dataDirectoryPath + File.separator + "testData.arff";
-        String stopwordsFilePath = dataDirectoryPath + File.separator + "stopwords.txt";
+
+        String modelsDirectoryPath = System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "models";
+        String stopwordsFilePath = modelsDirectoryPath + File.separator + "stopwords.data";
 
         File dataFileDirectory = new File(dataDirectoryPath);
 
@@ -76,7 +79,7 @@ public class RealSATDDetector implements SATDDetector
             FileUtil.removeBlankLines(commentsFilePath);
         }
 
-        List<Document> comments = DataReader.readComments(dataFileDirectory + File.separator);
+        List<Document> comments = DataReader.readComments(commentsFilePath);
 
         DataReader.outputArffData(comments, testDataFilePath);
 
@@ -85,8 +88,11 @@ public class RealSATDDetector implements SATDDetector
         stw.setIDFTransform(true);
         stw.setTFTransform(true);
 
-        SnowballStemmer stemmer = new SnowballStemmer();
+        Stemmer stemmer = new PorterStemmer();
         stw.setStemmer(stemmer);
+
+        InputStream stopWordsIS = this.getClass().getResourceAsStream("/stopwords.txt");
+        FileUtils.copyInputStreamToFile(stopWordsIS, new File(stopwordsFilePath));
 
         WordsFromFile stopwords = new WordsFromFile();
         stopwords.setStopwords(new File(stopwordsFilePath));
@@ -129,34 +135,33 @@ public class RealSATDDetector implements SATDDetector
     {
         Classifier classifier;
 
-        String dataDirectoryPath = System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "data";
-        String stopwordsFilePath = dataDirectoryPath + File.separator + "stopwords.txt";
-        String classifierPath = System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "models";
-        String classifierFilePath = classifierPath + File.separator + "SATDClassifier.model";
+        String modelsDirectoryPath = System.getProperty("user.home") + File.separator + ".identifySATD" + File.separator + "models";
+        String classifierFilePath = modelsDirectoryPath + File.separator + "SATDClassifier.model";
 
-        File directory_classifiers = new File(classifierPath);
+        File directory_models = new File(modelsDirectoryPath);
 
-        InputStream trainingFile = this.getClass().getResourceAsStream("/trainingData.arff");
-        InputStream stopWordsIS = this.getClass().getResourceAsStream("/stopwords.txt");
-
-        if(directory_classifiers.isDirectory() && directory_classifiers.listFiles().length == 1)
+        if(directory_models.isDirectory() && directory_models.listFiles().length == 2)
         {
             classifier = (Classifier) SerializationHelper.read(classifierFilePath);
         } else {
+            String stopwordsFilePath = modelsDirectoryPath + File.separator + "stopwords.data";
+
             StringToWordVector stw = new StringToWordVector(100000);
             stw.setOutputWordCounts(true);
             stw.setIDFTransform(true);
             stw.setTFTransform(true);
 
-            SnowballStemmer stemmer = new SnowballStemmer();
+            Stemmer stemmer = new PorterStemmer();
             stw.setStemmer(stemmer);
 
+            InputStream stopWordsIS = this.getClass().getResourceAsStream("/stopwords.txt");
             FileUtils.copyInputStreamToFile(stopWordsIS, new File(stopwordsFilePath));
 
             WordsFromFile stopwords = new WordsFromFile();
             stopwords.setStopwords(new File(stopwordsFilePath));
             stw.setStopwordsHandler(stopwords);
 
+            InputStream trainingFile = this.getClass().getResourceAsStream("/trainingData.arff");
             Instances trainSet = ConverterUtils.DataSource.read(trainingFile);
             stw.setInputFormat(trainSet);
             trainSet = Filter.useFilter(trainSet, stw);
@@ -176,10 +181,8 @@ public class RealSATDDetector implements SATDDetector
             classifier = new NaiveBayesMultinomial();
             classifier.buildClassifier(trainSet);
 
-            directory_classifiers = new File(classifierPath);
-
-            if(!directory_classifiers.isDirectory())
-                directory_classifiers.mkdirs();
+            if(!directory_models.isDirectory())
+                directory_models.mkdirs();
 
             SerializationHelper.write(classifierFilePath, classifier);
         }
