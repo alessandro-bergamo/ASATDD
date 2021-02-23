@@ -57,7 +57,7 @@ public class DataReader
 		List<Document> comments = new ArrayList<>();
 
 		// read comments' content first
-		List<String> lines = FileUtil.readLinesFromFile(path + "comments");
+		List<String> lines = FileUtil.readLinesFromFile(path);
 
 		for (int i = 0; i < lines.size(); i++)
 		{
